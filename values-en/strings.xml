@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- For recyclerview Home -->
+    <string-array name="tittleHome">
+        <item>Java Tutorial</item>
+        <item>HTML Tutorial</item>
+        <item>C++ Tutorial</item>
+    </string-array>
+
+
+    <!-- for stepper welcome -->
+    <string-array name="tittleWelcome">
+        <item>Simple and easy to understand</item>
+        <item>Trusted</item>
+        <item>Ads for development</item>
+    </string-array>
+
+    <string-array name="contentWelcome">
+        <item>We prioritize simplicity to make it easier for you</item>
+        <item>Created directly by programmers and structured in a structured way</item>
+        <item>Coding is a very tough job. Let ads encourage developers for a cup of coffee</item>
+    </string-array>
+
+    <array name="imagesWelcome">
+        <item>@drawable/simplicity</item>
+        <item>@drawable/shield</item>
+        <item>@drawable/cofee</item>
+    </array>
+
+    <integer-array name="colorWelcome">
+        <item>@color/green</item>
+        <item>@color/blue</item>
+        <item>@color/orange2</item>
+    </integer-array>
+</resources>

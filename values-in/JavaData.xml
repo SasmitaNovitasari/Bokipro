@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    basik konstep step1-->
+    <string-array name="Step1Sub1">
+        <item>Java adalah bahasa pemrograman tingkat tinggi yang dirancang pada tahun 1990 oleh sun micsosystem</item>
+        <item>Java bersifat kuat, portable dan dinamis untuk memenuhi berbagai jenis aplikasi. Lebih dari 3 miliar perangkat telah menggunakan dan mendukung penggunaan Java</item>
+        <item>Komputer sebenarnya memiliki bahasa yang rumit, namun banyak developer bekerja sama untuk menciptakan bahasa yang lebih mudah dipahami, dan Java menjadi salah satu di antara bahasa pemrograman yang mudah dipahami</item>
+        <item>Saat Kamu menulis kode Java, komputer masih belum memahami nya, karena itulah compiler ada. Dia akan mengubah kode Java kita agar bisa dipahami oleh komputer</item>
+        <item>Kita juga memerlukan editor atau alat untuk menulis kode yang bisa menunjukan kepada kita bagian penulisan mana yang salah.</item>
+        <item>Dan yang paling penting adalah, kita harus bisa menemukan bug atau error dari program kita. Kegiatan ini disebut dengan debugging.</item>
+        <item>Artinya kita membutuhkan editor, compiler dan juga debugger untuk kenyamanan coding (membuat program) kita.</item>
+        <item>Semua itu bisa kita dapatkan dalam 1  aplikasi, dia disebut IDE (Integrated Development and Environment). IDE sudah dibekali dengan banyak alat yang dapat membantu kita, ada banyak sekali IDE untuk Java, Kamu bisa mencari yang mana saja sesuai seleramu</item>
+        <item>Atau jika Kamu belum memiliki fasilitas yang memadai, Kamu bisa menggunakan compiler online untuk pembelajaran. Mereka sangat banyak, pilihlah sendiri di internet tanpa mengunduh alat apapun.</item>
+        <item>Namun semakin maju nya teknologi, Kamu juga bisa menjalankan Java di android, beberapa developer telah membuat compiler yang bisa Kamu unduh dengan gratis.</item>
+        <item>Sekarang tidak ada alasan untuk mu menjadi salah satu orang yang tidak memiliki ilmu pemrograman</item>
+    </string-array>
+
+    <string-array name="Step1Sub2">
+        <item>Sekarang kita akan memeriksa program sederhana yang melegenda. Apalagi kalau bukan program hello world! </item>
+        <item>
+"    class MyClass {
+        public static void main(String[] args) {
+            //  Kode mu disini
+            System.out.println(\"Hello world!\");
+        }
+    }"
+        </item>
+        <item>Sekarang mari kita bedah kode nya satu persatu</item>
+        <item>
+"    class MyClass {
+        ...
+    }"
+        </item>
+        <item>MyClass adalah nama class Kamu, nama nya diambil dari nama file.java yang Kamu buat</item>
+        <item>Dalam Java Kamu bisa membuat banyak class untuk memecah kode mu menjadi lebih mudah dipelihara. </item>
+        <item>Tidak perlu takut, kita akan belajar class di masa mendatang</item>
+        <item>
+"    public static void main(String[] args) {
+        ...
+    }"
+        </item>
+        <item>Setiap program Java harus memiliki class dan juga main method atau metode utama. Kode diatas adalah metode utama kita</item>
+        <item>public mengartikan siapa saja yang dapat mengakses nya. Ini disebut access modifier yang akan kita pelajari di masa mendatang. </item>
+        <item>main menandakan ini adalah metode utama mu, semua program mu harus berakhir disini agar dia dieksekusi </item>
+        <item>void berarti dia tidak mengembalikan apapun atau kosong. Nanti kita akan membahas ini lebih rinci di pelajaran selanjutnya</item>
+        <item>
+"    System.out.println(\"Hello world!\");
+        </item>
+        <item>Kita akan membahas kode diatas di materi selanjutnya untuk penjelasan lebih lengkap.</item>
+    </string-array>
+
+    <string-array name="Step1Sub3">
+        <item>Dari pembelajaran hello world sebelumnya kita belum membahas lebih lanjut tentang mencetak text ke layar</item>
+        <item>Ini berfungsi untuk memberikan tampilan atau petunjuk teks kepada pengguna.</item>
+        <item>Ada 2 cara untuk mencetak teks ke layar, menggunakan println() atau print()</item>
+        <item>
+"    System.out.println();
+    System.out.print();"
+        </item>
+        <item>Keduanya dapat digunakan untuk mencetak sesuatu ke layar, ini hanya berlaku untuk Kamu yang menjalankan projek Java di terminal atau CMD windows.</item>
+        <item>Sekarang kita akan lihat penggunaan yang pertama</item>
+        <item>
+"    System.out.println(\"ini contoh\");
+    System.out.println(\"mencetak layar\");"
+        </item>
+        <item>Dia akan mencetak teks lalu otomatis mengganti baris (enter). Sedangkan untuk melakukan enter secara manual Kamu harus menambahkan \\n sebagai tanda enter.</item>
+        <item>Tap lagi untuk melihat output dari kode diatas</item>
+        <item>
+"    ini contoh
+    mencetak layar"
+        </item>
+        <item>Sangat sederhana bukan? Sekarang kita akan mempelajari cara penggunaan yang kedua</item>
+        <item>
+"    System.out.print(\"ini contoh\");
+    System.out.print(\"mencetak layar\\n\");
+    System.out.print(\"ini baris baru\");"
+        </item>
+        <item>print() tidak akan otomatis mengganti baris, jadi Kamu harus mengganti baris dengan cara manual.</item>
+        <item>
+"    ini contohmencetak layar
+    ini baris baru"
+        </item>
+        <item>Perhatikan bahwa output contohmencetak tidak diberi spasi karena di awal kata "mencetak" ataupun di akhiran kata "contoh" tidak ada spasi nya.</item>
+        <item>Sekarang Kamu sudah mengerti cara mencetak teks ke terminal. Bermain - main lah dengan kode dan coba tulis namamu disana!</item>
+    </string-array>
+
+    <string-array name="Step1Sub4">
+        <item>Dari program hello world sebelumnya, mungkin Kamu sempat melihat teks yang diawali dengan dua garis miring</item>
+        <item>Dia disebut dengan komentar. Di Java ada 2 jenis komentar, yaitu komentar 1 baris (single line) dan komentar banyak baris (multi line).</item>
+        <item>
+"    // Ini komentar satu baris
+    // Ini juga satu baris
+    /*
+        Ini komentar multi baris
+        Kamu bisa tambahkan sebanyak apapun
+    */"
+        </item>
+        <item>Komentar tidak akan dieksekusi oleh compiler, dia akan dilewati dan tidak berpengaruh dalam program mu. </item>
+        <item>Dia terlihat tidak berarti namun ini sangat penting jika kita memiliki baris kode yang panjang dan algoritma yang rumit</item>
+        <item>Kamu bisa meletakan komentar dimanapun dan sebanyak apapun agar memudahkan mu mengingat kembali alur program </item>
+        <item>Ini juga dapat memudahkan programmer lain untuk membaca kode mu </item>
+        <item>Ingatlah, menambahkan terlalu banyak komentar juga akan menambah ukuran suatu file </item>
+    </string-array>
+
+    <string-array name="Step1Sub5">
+        <item>Variable bekerja seperti wadah, dia akan menampung apapun yang Kamu isi disana </item>
+        <item>Perbedaan nya, Java memiliki wadah khusus untuk setiap jenis isi yang Kamu masukan </item>
+        <item>Perbedaan ini disebut dengan tipe data </item>
+        <item>Jika Kamu memiliki wadah berbentuk kotak, maka dalam Java, sesuatu atau isian nya juga harus berbentuk kotak. </item>
+        <item>Pertama Kamu harus mengenal macam tipe data dalam Java dan tipe apa saja yang dapat ditampung oleh nya </item>
+        <item>"
+Integer (int) : Bilangan bulat
+Floating (float) : Bilangan decimal
+Boolean (boolean) : true atau false
+Char (char) : Karakter. Ingat, menampung karakter berarti hanya 1 huruf
+String : Kumpulan char. Ini berarti Kamu bisa menulis kalimat panjang, karena prinsip String adalah kumpulan char yang dijadikan satu
+            "</item>
+        <item>Untuk menulis sebuah variable Kamu bisa hanya menyiapkan wadah nya atau mengisi wadah itu juga </item>
+        <item>Anggaplah Kamu memiliki wadah berbentuk lingkaran, tapi Kamu hanya ingin menyiapkan wadah nya saja dan mengisi nya nanti. </item>
+        <item>
+"    int bilanganBulat;
+    String kata;
+    boolean kondisi;
+    float desimal;"
+        </item>
+        <item>Jangan sampai Kamu menjadi salah satu dari ribuan orang yang melupakan tanda titik koma di akhir variable. </item>
+        <item>Jika Kamu melupakan nya, tidak perlu khawatir, compiler akan mengembalikan error dan meninggalkan pesan disana. </item>
+        <item>Sekarang kita akan belajar untuk memberikan nilai pada variable. Terkadang ini juga disebut dengan meng inisialisasi (initialization). </item>
+        <item>
+"    int bilanganBulat = 15;
+    String kata = \"Kamu bisa mengisi kalimat juga\";
+    boolean kondisi = true; // Ingat, hanya bisa true atau false
+    float desimal = 8.0;"
+        </item>
+        <item>Nilai variable juga bisa dirubah selama dia tidak ditetapkan sebagai final</item>
+        <item>
+"    class MyClass {
+        public static void main(String[] args) {
+            int bilanganBulat = 15;
+            System.out.println(bilanganBulat); // Output: 15
+            bilanganBulat = 20;
+            System.out.println(bilanganBulat); // Output: 20
+        }
+    }"
+        </item>
+        <item>Untuk membuat suatu variable tidak bisa dirubah, tetapkan menjadi final. </item>
+        <item>
+"    final int bilanganBulat = 20;"
+        </item>
+        <item>Mengubah nya dengan paksa dapat menyebabkan error </item>
+        <item>Ini juga bisa digunakan untuk tipe data lain nya, cukup tambahkan final didepan nama tipe data. </item>
+    </string-array>
+
+    <string-array name="Step1Sub6">
+        <item>Saat Kamu menjalankan program Java di terminal, terkadang Kamu membutuhkan input user. Untuk mendapatkan nya Kamu bisa menggunakan class scanner. </item>
+        <item>
+"    import java.util.Scanner;"
+        </item>
+        <item>Untuk menggunakan scanner, Kamu perlu membuat instansi dari objek tersebut. </item>
+        <item>
+"    Scanner scanner = new Scanner(System.in);"
+        </item>
+        <item>Tidak perlu khawatir jika terlihat membingungkan, ini adalah langkah awal yang bagus untuk mu mengenal classes di Java. </item>
+        <item>Untuk mengambil input, pastikan Kamu menggunakan input untuk tipe data yang sama </item>
+        <item>
+"byte: nextByte()
+short: nextShort()
+int: nextInt()
+long: nextLong()
+float: nextFloat()
+double: nextDouble()
+line: readLine()
+word: next()"
+        </item>
+        <item>Sekarang mari kita satukan semua nya. </item>
+        <item>
+"    import java.util.Scanner;
+
+    class MyClass {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            String nama = scanner.next();
+            System.out.println(nama); // Output nama sesuai input user
+        }
+    }"
+        </item>
+    </string-array>
+
+    <string-array name="Step1Sub7">
+        <item>Ada beberapa primitif operator yang mungkin sudah Kamu kenal waktu kecil. Tambah (+), kurang (-), bagi(/), perkalian(*), modulo(%) </item>
+        <item>Mungkin ada yang baru, yaitu modulo. Modulo bekerja mirip seperti pembagian, perbedaan nya adalah modulo mengembalikan sisanya, sedangkan pembagian mengembalikan hasil nya.</item>
+        <item>11/9 = 1 sedangkan 10%9=2 karena setelah dibagi 9 masih menyisakan 2 atau sering dikenal dengan 1,2 dalam pembagian. Modulo hanya mengambil sisa nya, yaitu 2. </item>
+        <item>Sedangkan pembagian akan mengembalikan 1 jika disimpan dalam variable integer, dan akan mengembalikan 1,2 jika disimpan dalam variable float</item>
+        <item>Mudah bukan, program hanya tentang penulisan(syntax) yang sedikit berubah agar komputer memahami maksud kita</item>
+    </string-array>
+
+    <string-array name="Step1Sub8">
+        <item>Apa Kamu ingat? Pada dasarnya String berisi kumpulan karakter? karena itu String tidak termasuk dalam operator primitif </item>
+        <item>Namun, String juga bisa dijumlahkan dengan beberapa ketentuan </item>
+        <item>
+"    String firstName = \"Sasmita\";
+    String lastName = \"Developer\";
+    String result = firstName + lastName; // SasmitaDeveloper"
+        </item>
+        <item>Teruslah bermain dengan kode dan Kamu akan mulai terbiasa </item>
+        <item>Cobalah menggunakan operator selain penjumalahan dan lihat apa yang terjadi</item>
+        <item>Membaca semua materi dalam waktu bersamaan adalah praktik yang buruk </item>
+        <item>Kamu harus menikmati proses nya dengan terus melatih diri </item>
+    </string-array>
+
+    <string-array name="Step1Sub9">
+        <item>Sesuai dengan namanya, increment untuk menaik kan suatu nilai, dan decrement untuk menurunkan suatu nilai.</item>
+        <item>Jika Kamu ingin menaik kan suatu nilai dalam variable, Kamu bisa menggunakan increment dibandingkan membuat 2 variable berbeda kemudian menambahkan nya secara manual</item>
+        <item>Java dibuat untuk memudahkan kita! Tap untuk melihat contoh nya</item>
+        <item>
+"    int x = x + 1 // increment
+    int x = x – 1 // decrement"
+        </item>
+        <item>Itu akan menaikan nilai dalam variable x sebanyak 1 dan menyimpan nilai terbaru nya di variable yang sama, ini juga berlaku untuk decrement nya</item>
+        <item>Jadi Kamu tidak perlu membuat variable baru untuk menyimpan nilai baru</item>
+        <item>Kamu bisa mengubah angka 1 di sana dengan angka yang Kamu inginkan</item>
+        <item>Namun, Kamu bisa menulisnya dengan lebih sederhana jika Kamu hanya ingin mengubah nilai nya sebesar 1</item>
+        <item>
+"    x++ // increment
+    x-- // decrement"
+        </item>
+        <item>Sekarang mari berkenalan dengan prefix dan postfix</item>
+        <item>
+"    int x = 34;
+    System.out.println(x); // output 34
+    int y = ++x; // ini adalah prefix
+    System.out.println(y); // output 35
+    System.out.println(x); // output 35"
+        </item>
+        <item>Prefix akan mengubah nilainya terlebih dahulu kemudian menggunakan nilai terbarunya. Perhatikan output sebelum dan sesudah melewati prefix!</item>
+        <item>Postfix akan menggunakan nilai lama nya kemudian menaikan nya, tekan lanjutkan untuk melihat contoh nya!</item>
+        <item>
+"    int x = 34;
+    System.out.println(x); // output 34
+    int y = x++; // ini adalah postfix
+    System.out.println(y); // output 34
+    System.out.println(x); // output 35"
+        </item>
+        <item>Perhatikan baik – baik! Sebelum melewati postfix nilai x masih sama, setelah melewati postfix, nilai y menggunakan nilai lama dari x dan menyimpan nya, kemudian x di naik kan 1</item>
+        <item>Ini menyebabkan y memiliki nilai lama yaitu 34, dan x = 35 karena telah di naik kan 1</item>
+        <item>Selanjutnya kita akan mengenal operator penugasan yang digabungkan dengan + dan –</item>
+        <item>
+"    int x = 10;
+    int y = 5;
+    System.out.println(x); // 10
+    System.out.println(y); // 5
+    x += y; // x = x + y
+    y –= x; // y = y – x
+    System.out.println(x); // 15
+    System.out.println(y); // –5"
+        </item>
+        <item>Perhatikan kapan nilai x dan y berubah</item>
+        <item>Terus lah belajar dan bermain – main dengan code!</item>
+    </string-array>
+
+
+    <!--    Perulangan step2-->
+    <string-array name="Step2Sub1">
+        <item>if digunakan untuk membandingkan sesuatu. Mari kita buat analogi sederhana untuk mu</item>
+        <item>Jika nomor 1 benar maka nilai ditambah 10. Mari kita buat kode untuk itu! Tekan selanjutnya untuk belajar lebih jauh</item>
+        <item>
+"    int nilai = 0;
+    boolean nomorSatu = true;
+    if (nomorSatu == true) {
+        nilai += 10;
+    }"
+        </item>
+        <item>Perhatikan tanda ==, ini digunakan untuk mengatakan bahwa nomor 1 sama dengan true. Jika menggunakan if Kamu harus menggunakan 2 tanda =</item>
+        <item>Kamu juga bisa menggunakan kurang dari (&lt;) atau lebih besar dari (>). Jika menggunakan ini maka 2 hal yang harus Kamu bandingkan adalah suatu nilai terhitung, seperti int atau float</item>
+        <item>Sekarang bagaimana jika nomorSatu salah (false) ? Ayo kita lihat kode nya!</item>
+        <item>
+"    int nilai = 0;
+    boolean nomorSatu = false;
+    if (nomorSatu == true) {
+        nilai += 10;
+    } else {
+        nilai –= 10;
+    }"
+        </item>
+        <item>Sekarang else akan dijalankan karena nomorSatu false dan mengurangi nilai sebesar 10</item>
+        <item>else hanya akan dijalankan jika kondisi di if tidak sesuai</item>
+    </string-array>
+
+    <string-array name="Step2Sub2">
+        <item>Terkadang kita akan membutuhkan sesuatu seperti if di dalam if. Ayo lihat analogi sederhana nya terlebih dahulu!</item>
+        <item>Jika nomorSatu salah maka lihat apakah nilai nya 0, jika 0 berikan pesan “remidi”, jika tidak 0 berikan pesan “belajarlah lagi!”. Sedangkan jika nomorSatu benar maka berikan pesan “selamat!”</item>
+        <item>
+"    int nilai = 0;
+    boolean nomorSatu = false;
+    if (nomorSatu == false) {
+        if (nilai == 0) {
+            System.out.println(\"remidi\");
+        } else {
+            Syste.out.println(\"belajarlah lagi!\");
+        }
+    } else {
+        System.out.println(\"selamat!\");
+    }"
+        </item>
+        <item>else juga bisa digunakan didalam if bersarang selama dia di indentasi dengan tepat. Else harus selalu disatukan dengan if, sedangkan if tidak masalah tanpa else</item>
+        <item>Kamu bisa membuat if bersarang sebanyak apa pun. Pastikan IDE atau kode editor mu meng indentasi dengan tepat!</item>
+    </string-array>
+
+    <string-array name="Step2Sub3">
+        <item>Terkadang saat menggunakan if Kamu masih harus menambahkan logika lagi tanpa ingin membuat if bersarang</item>
+        <item>Sebagai contoh Kamu ingin menggunakan operator dan (&amp;&amp;), atau (||). Mari lihat analogi nya</item>
+        <item>Jika nama nya anton dan id nya 1234 maka ijinkan login</item>
+        <item>
+"    String nama = \"anton\";
+    int id = 1234;
+    if (nama.equals(\"anton\") &amp;&amp; id == 1234) {
+        // login
+    }"
+        </item>
+        <item>Perhatikan pada saat membandingkan String. Ingat kembali bahwa String bukan termasuk dalam operator primitif</item>
+        <item>Karena itu saat membandingkan String, kita tidak bisa menggunakan == melainkan .equals()</item>
+        <item>Saat menggunakan &amp;&amp;, kedua kondisi perbandingan harus benar. Jadi nama dan id harus sesuai</item>
+        <item>Sedangkan saat menggunakan ||, kondisi if akan benar jika salah satu perbandingan nya benar</item>
+        <item>Anggaplah perbandingan nama nya benar namun perbandingan id nya salah, maka if akan tetap di eksekusi</item>
+        <item>
+"    String nama = \"anton\";
+    int id = 1234;
+    if (nama.equals(\"anton\") || id == 0000) {
+        // login
+    }"
+        </item>
+        <item>Sekarang kita akan membuat perbandingan menggunakan NOT(!)</item>
+        <item>
+"    int id = 1234;
+    if (!(id == 0000)) {
+        // Ini dieksekusi
+    }"
+        </item>
+        <item>Dengan diapitnya perbandingan didalam tanda !() berarti dia menjadi kebalikan nya</item>
+        <item>Atau Kamu bisa membacanya \"Jika id sama dengan 0000 tidak benar, maka...\"</item>
+        <item>Dengan begitu tanda !() bisa kita baca dengan \"... tidak benar\" </item>
+        <item>HEBAT! Kamu sudah sejauh ini, teruslah berlatih</item>
+    </string-array>
+
+    <string-array name="Step2Sub4">
+        <item>else if bekerja mirip seperti if, perbedaan nya adalah dia tidak bisa berdiri sendiri, dia harus disatukan bersama if</item>
+        <item>Dia mirip seperti else bukan? Mari lihat contoh kode nya</item>
+        <item>
+"    int id = 1234;
+    if (id == 1111) {
+        ....
+    } else if (id == 1234) {
+        // ini di eksekusi
+    } else if (id == 5678) {
+        ....
+    } else {
+        ...
+    }"
+        </item>
+        <item>Jika id nya adalah 1234 itu berarti kondisi if salah, dia akan meneruskan pengecekan ke else if dan else if seterus nya sampai mendapat else if yang benar</item>
+        <item>Namun jika semua else if juga salah maka dia akan meng–eksekusi else sebagai tindakan terakhir</item>
+        <item>Jika tidak ada else disana, maka tidak ada yang harus di eksekusi</item>
+        <item>Kamu bisa menambahkan else if sebanyak yang Kamu butuhkan</item>
+    </string-array>
+
+    <string-array name="Step2Sub5">
+        <item>switch sangat mirip seperti if dengan else if, dia akan mencari kondisi mana yang benar dan meng–eksekusi nya</item>
+        <item>
+"    int id = 1234;
+    switch (id) {
+        case 1111:
+            // lakukan sesuatu
+            break;
+        case 1234:
+            // ini akan di eksekusi
+            break;
+        case 0000:
+            // lakukan sesuatu
+            break;
+        default:
+            // lakukan sesuatu
+    }"
+        </item>
+        <item>Switch jauh lebih sedikit kode jika Kamu harus membandingkan banyak hal</item>
+        <item>Perhatikan tanda break yang harus disertakan di setiap case. Juga perhatikan indentasi nya!</item>
+        <item>Case 0000 tidak akan di eksekusi karena kondisi yang benar telah ditemukan di atasnya</item>
+        <item>Jika Kamu mencoba menulis perbandingan yang sama, editor akan menyuruhmu menghapus salah satu</item>
+        <item>Perhatikan juga bagian default dan fakta bahwa tidak ada break disana</item>
+        <item>Default akan di eksekusi jika tidak ada kondisi yang benar. Ini mirip dengan else saat tidak ada kondisi dalam if maupun else if yang benar</item>
+        <item>Selain int, Kamu juga bisa membuat case untuk mencari String, cukup apit text dengan petik ganda</item>
+    </string-array>
+
+    <string-array name="Step2Sub6">
+        <item>While akan dijalankan selama kondisi nya benar. Jika Kamu ingat lagi, saat kondisi if benar, dia hanya di eksekusi 1 kali</item>
+        <item>
+"    int x = 1;
+    while (x == 1) {
+        System.out.println(\"run!\"):
+    }"
+        </item>
+        <item>Program akan mencetak run selamanya karena kondisi nya selalu benar. Karena itu kita harus membuat suatu kondisi di dalam while untuk menghentikan nya</item>
+        <item>
+"    int x = 1;
+    while (x == 1) {
+        System.out.println(\"run!\"):
+        x = 0;
+    }"
+        </item>
+        <item>Sekarang while hanya mencetak 1 run karena setelah itu x dirubah menjadi 0 dan x == 1 sudah menjadi kondisi yang salah</item>
+        <item>Mari kita buat kode lagi untuk mu. Tekan lagi untuk belajar lebih jauh!</item>
+        <item>
+"    int x = 6;
+    while (x &lt; 10) {
+        System.out.print(x):
+        x++;
+    }"
+        </item>
+        <item>Sekarang dia akan mencetak angka 6 7 8 9. Bagaimana agar angka 10 ikut tecetak ke layar?</item>
+        <item>Gunakan perbandingan &lt;= karena ini seperti “6 kurang dari atau sama dengan 10”. Ini juga berlaku untuk lebih besar dari (>=)</item>
+    </string-array>
+
+    <string-array name="Step2Sub7">
+        <item>do akan di eksekusi apapun kondisi nya (benar atau salah) sebanyak 1 kali kemudian menjalankan while</item>
+        <item>
+"    int x = 1;
+    do {
+        System.out.println(x)
+    } while (x &lt; 0);
+    // output 1"
+        </item>
+        <item>Perhatikan bahwa kondisi di while salah namun do akan tetap di eksekusi sebanyak 1 kali</item>
+        <item>Tekan lagi untuk melihat lebih banyak</item>
+        <item>
+"    int x = 1;
+    do {
+        System.out.println(x)
+        x++;
+    } while (x &lt; 5);
+    /*
+    1
+    2
+    3
+    4
+    */"
+        </item>
+        <item>Perhatikan saat kondisi while benar dia akan kembali ke atas dan meng–eksekusi do dan seterusnya sampai kondisi while salah</item>
+        <item>Ini berguna jika Kamu ingin mengambil input user dan berhenti meminta input sampai user memerintahkan nya</item>
+    </string-array>
+
+    <string-array name="Step2Sub8">
+        <item>For bekerja mirip seperti while, dia akan di eksekusi selama kondisi nya benar</item>
+        <item>Biasanya for digunakan untuk mencetak dari rentang tertentu sampai yang diinginkan</item>
+        <item>Tekan selanjutnya untuk memahami syntax perulangan for</item>
+        <item>
+"    for (inisialisasi; kondisi; increment/decrement) {
+        // lakukan sesuatu
+    }"
+        </item>
+        <item>Tap lagi dan lihat contoh kode nya</item>
+        <item>
+"    for (int a = 1; a &lt;= 5; a++) {
+        System.out.println(a);
+    }
+    /*
+    1
+    2
+    3
+    4
+    5
+    */"
+        </item>
+        <item>Untuk increment maupun decrement Kamu juga bisa menggunakan syntax a+=2 dan program akan mencetak angka dengan kelipatan 2</item>
+        <item>
+"    for (int a = 1; a &lt;= 5; a+=2) {
+        System.out.println(a);
+    }
+    /*
+    1
+    3
+    5
+    */"
+        </item>
+        <item>Sangat mudah bukan? Terus lah belajar!</item>
+    </string-array>
+
+
+    <!--    step3-->
+    <string-array name="Step3Sub1">
+        <item>Bayangkan Kamu harus menyimpan banyak nama dalam variable String</item>
+        <item>
+"    String nama1 = \"john\";
+    String nama2 = \"smith\";
+    String nama3 = \"jacob\";"
+        </item>
+        <item>Kode diatas tidak salah, namun jika data nama yang harus Kamu tulis ada ribuan Kamu bisa menggunakan array</item>
+        <item>Kamu bisa menyimpan banyak data dalam 1 variable tanpa harus menulisnya berulang ulang. Dengan catatan semua variable itu memiliki tipe data yang sama.</item>
+        <item>
+"    String[] data = {\"john\", \"smith\", \"jacob\"};"
+        </item>
+        <item>Ingatlah untuk menggunakan kurung kurawal dan titik koma di akhir nya.</item>
+        <item>Untuk mengambil data dari suatu array, gunakan syntax ini</item>
+        <item>
+"    &lt;nama tipe data>[&lt;index>];"
+        </item>
+        <item>Urutan atau index array bukan lagi dari 1, melainkan dari 0</item>
+        <item>
+"    String[] data = {\"john\", \"smith\", \"jacob\"};
+    System.out.println(data[0]); // john
+    System.out.println(data[1]); // smith
+    System.out.println(data[2]); // jacob"
+        </item>
+        <item>Jika Kamu mencoba mengakses data[3] maka erorr <b>ArrayIndexOutOfBoundsException</b></item>
+        <item>Itu menandakan bahwa index tidak ada dalam data karena index tertinggi nya hanya 2</item>
+        <item>Sekarang Kamu telah belajar membaca sebuah error</item>
+        <item>Compiler selalu meninggalkan pesan jika program mu tidak mau berjalan</item>
+    </string-array>
+
+    <string-array name="Step3Sub2">
+        <item>Pertama kenali dulu bahasa inggris dari “perulangan for yang ditingkatkan”. Dia disebut dengan enhanced for loop</item>
+        <item>Dia juga sering dijuluki dengan “for each” (untuk setiap)</item>
+        <item>for each digunakan untuk melintasi elemen array dan meminimalisir terjadi nya bug</item>
+        <item>
+"    String[] data = {\"john\", \"smith\", \"jacob\"};
+    for (int x =0; x &lt; data.length; x++) {
+        System.out.println(data[x]);
+    }"
+        </item>
+        <item>Dia akan mencetak semua isi dalam array data</item>
+        <item>Perhatikan kondisi for, kita menggunakan length untuk mendapatkan panjang array. Disini panjang array akan sesuai dengan perhitungan dalam matematika, yaitu 3</item>
+        <item>Ingatlah bahwa yang dihitung mulai dari 0 adalah index nya, bukan panjang nya.</item>
+        <item>Mereka 2 hal yang berbeda. Index mengacu pada di mana (alamatnya), sedangkan panjang mengacu pada ukuran atau banyak nya data</item>
+        <item>Jika Kamu menggunakan perbandingan kondisi &lt;= maka 3 akan dicari dalam index sedangkan index tertinggi kita hanya 2. Disaat inilah error ArrayIndexOutOfBoundsException terjadi</item>
+        <item>Penulisan kode tadi cukup lengkap terutama jika kita ingin mengambil index dengan kelipatan 2 dst</item>
+        <item>Sekarang mari kita lihat syntax for loop yang benar – benar ditingkatkan</item>
+        <item>
+"    String[] data = {\"john\", \"smith\", \"jacob\"};
+    for (String t: data) {
+        System.out.println(t);
+    }"
+        </item>
+        <item>Sekarang semua data yang berada dalam array akan dicetak</item>
+        <item>Selalu perhatikan tipe data yang digunakan!</item>
+    </string-array>
+
+    <string-array name="Step3Sub3">
+        <item>Dimateri sebelum nya Kamu sudah mengenal tentang array, array yang Kamu pelajari itu adalah array 1 dimensi</item>
+        <item>
+"    String[] array = {};"
+        </item>
+        <item>Banyaknya dimensi array ditandai dengan banyak nya tanda kurung siku []</item>
+        <item>Sekarang kita akan mempelajari tentang multidimensional array atau array multidimensi</item>
+        <item>Sebagai contoh kita akan belajar array 2 dimensi. Maka kita akan membutuhkan 2 tanda kurung siku</item>
+        <item>
+"    int[][] dataArray = {{arr1}, {arr2}, {arr3}, {arr4}, ...};"
+        </item>
+        <item>Ingatlah kembali di materi sebelum nya bahwa elemen (data - data) yang kita tampung langsung berisi nilai dari tipe data yang sudah ditentukan</item>
+        <item>
+"    int[] var = {1, 2, 3};"
+        </item>
+        <item>Sedangkan elemen dari dataArray berisi array lagi. Artinya index ke 0 dari dataArray adalah arr1 dan begitu seterusnya.</item>
+        <item>Sedangkan arr1 didalam dataArray masih memiliki index nya sendiri</item>
+        <item>
+"    int[] arr1 = {1, 2};"
+        </item>
+        <item>arr1 masih memiliki index 0 yang berisi 1 dan di index 1 yang berisi 2</item>
+        <item>Ini seperti array didalam array</item>
+        <item>Sekarang mari kita buat 2 array integer yang menampung nilai berbeda.</item>
+        <item>
+"    int[] data1 = {1, 2};
+    int[] data2 = {3, 4, 5};"
+        </item>
+        <item>Sekarang kita akan gabungkan kedua nya menjadi array 2 dimensi.</item>
+        <item>
+"    int[][] array = {{1, 2}, {3, 4, 5}};"
+        </item>
+        <item>Perhatikan kode diatas. Kita meletakan array data1 dan data2 namun mereka masih terpisah</item>
+        <item>Kita meletakan data1 di index ke 0 dan data2 di index ke 1</item>
+        <item>
+"    int[][] arrayInduk = { {data1} , {data2}, ... };"
+        </item>
+        <item>Dari analogi diatas kita bisa melihat bahwa data1 dan data2 merupakan elemen dari array induk</item>
+        <item>Elemen dari arrayInduk bukan langsung nilai integer, melainkan sebuah array yang mengandung elemen - elemen integer.</item>
+        <item>Jika kita pecah lagi, data1 masih mengandung elemen lagi</item>
+        <item>
+"    {1, 2}"
+        </item>
+        <item>Elemen dari data1 memiliki index juga yang dimulai dari 0.</item>
+        <item>Maka untuk mengakses sebuah data int dari array dua dimensi, kita memerlukan 2 index</item>
+        <item>Index pertama untuk arrayIndux dan index kedua untuk array yang menjadi elemen dari arrayInduk</item>
+        <item>
+"    int[][] array = {{1, 2}, {3, 4, 5}};
+    array[0][1]; // 2"
+        </item>
+        <item>Perhatikan bahwa array[0].. mengacu pada array di index 0 yang berisi {1, 2}</item>
+        <item>Dan array..[1] mengacu pada index 1 dari array didalam nya. Array didalam nya yaitu {1, 2} maka index ke 1 adalah 2</item>
+        <item>Ingat baik - baik bahwa index array selalu dimulai dari 0</item>
+        <item>Kamu bisa membuat banyak dimensi pada suatu array, namun semakin banyak dimensi nya, dia akan semakin sulit dikelola</item>
+    </string-array>
+
+
+
+    <!--    step4-->
+    <string-array name="Step4Sub1">
+        <item>Kita akan mengenal tentang OOP (Object Oriented Programing).  Dalam bahasa Indonesia dia dikenal dengan PBO (Pemrograman Berorientasi Objek)</item>
+        <item>Ini seperti memecah kode panjang menjadi beberapa file atau fungsi untuk bisa digunakan kembali. Pada dasarnya ini hanya untuk memudahkan seorang programmer.</item>
+        <item>Anggaplah ada 2 mobil. Keduanya adalah mobil, tapi bisa saja mobil A memiliki warna merah dan mobil B berwarna biru.</item>
+        <item>Lalu perilakunya, mobil A bisa terbang dan mobil B bisa di laut. Ini juga bisa dijadikan seperti class Mobil dengan attribut warna dan perilaku (method) sesuai objek nya</item>
+        <item>
+"    class MobilA {
+        String warna = "biru";
+        public void A() {
+            // Terbang
+        }
+    }
+
+    class MobilB {
+        String warna = "biru";
+        public void B() {
+            // Di laut
+        }
+    }"
+        </item>
+        <item>Jadi keduanya memang sama, yaitu mobil. Tapi selalu ada karakteristik yang membedakan antara kedua nya.</item>
+        <item>Entah dari nama nya, attribute nya ataupun perilaku nya</item>
+    </string-array>
+
+    //meotde
+    <string-array name="Step4Sub2">
+        <item>Metode juga bisa disebut sebagai fungsi (function). Sekarang mari kita buat contoh metode sederhana</item>
+        <item>
+"    static void MyFunction() {
+        System.out.println(\"Terbang!\");
+    }"
+        </item>
+        <item>Sekarang kita memiliki 1 metode MyFunction yang akan mencetak kata Terbang. Untuk menggunakan nya cukup tuliskan nama metode nya</item>
+        <item>
+"    MyFunction();"
+        </item>
+        <item>Perhatikan tanda kurung dan titik koma, jangan sampai Kamu melupakan nya.</item>
+        <item>Kelebihan dari metode adalah Kamu bisa memanggil nya sebanyak apapun. Ini akan membuat kode mu lebih sedikit dibanding harus menulis kode mu berulang kali.</item>
+        <item>
+"    class MyClass {
+        static void MyFunction() {
+            System.out.println(\"Terbang!\");
+        }
+        public static void main(String[] args) {
+            MyFunction();
+            MyFunction();
+        }
+    }"
+        </item>
+        <item>Ingatkah Kamu tentang main method (fungsi utama) ? Semua program mu harus berakhir di sana agar di eksekusi oleh compiler</item>
+        <item>Karena itu MyFunction(); harus ditulis di fungsi main</item>
+    </string-array>
+
+    // tipe kembali
+    <string-array name="Step4Sub3">
+        <item>Ingatkah Kamu tentang void? Dia tidak mengembalikan apapun. Mungkin Kamu bertanya tanya apa yang dia kembalikan. Sekarang mari kita cari tahu</item>
+        <item>Macam tipe pengembalian sama seperti tipe data, tapi tidak hanya terbatas pada itu, dia bisa mengembalikan banyak hal</item>
+        <item>
+"    public class MyClass {
+
+        public static int usia() {
+            int a = 20;
+            return a;
+        }
+
+        public static void main(String[] args) {
+            System.out.println(usia()); // output: 20
+        }
+    }"
+        </item>
+        <item>Perhatikan pada method usia() dia tidak lagi menggunakan void, melainkan int yang berarti integer (bilangan bulat)</item>
+        <item>Kita harus menggunakan return sebagai tanda bahwa dia mengembalikan sesuatu diikuti dengan apa yang dikembalikan. Dengan catatan apa yang dikembalikan memiliki tipe yang sama dengan yang sudah ditentukan</item>
+        <item>
+"    public static String nama()"
+        </item>
+        <item>Jika dia menggunakan String maka tipe data yang dikembalikan harus String juga</item>
+        <item>
+"    return \"Sasmita\";"
+        </item>
+        <item>Kamu juga bisa menyimpan \”Sasmita\” dalam variable String kemudian mengembalikan nya dengan cara yang sama saat kita mengembalikan integer di method usia()</item>
+        <item>Tentu saja jika Kamu tidak ingin mengembalikan apapun, cukup gunakan void.</item>
+    </string-array>
+
+    //objek
+    <string-array name="Step4Sub4">
+        <item>Untuk membuat objek di Java sangat mudah. Anggaplah kita memiliki class Animal.java</item>
+        <item>
+"    public class Animal {
+        // Ini constructor
+        public Animal() {
+            System.out.println(\"hai\");
+        }
+    }"
+        </item>
+        <item>Lihat pada bagian public Animal(). Java menyebutnya constructor, ciri umum nya adalah nama fungsi nya sama seperti nama class nya.</item>
+        <item>Constructor akan dijalankan setiap kali objek dari kelas itu dibuat. Kamu juga bisa membiarkan constructor kosong atau memilih untuk tidak membuat nya</item>
+        <item>Sekarang kita ingin membuat objek Animal di class utama kita yaitu MyClass</item>
+        <item>
+"    public class MyClass {
+        public static void main(String[] args) {
+            Animal test = new Animal();
+            // Output \"hai\"
+        }
+    }"
+        </item>
+        <item>Dari kode diatas kita bisa melihat syntax saat ingin membuat suatu objek</item>
+        <item>
+"    &lt;nama class> namaObjekBebas = new &lt;nama class>"
+        </item>
+        <item>Sekarang kita memilik objek test dari class Animal. Mari kita coba menambahkan fungsi baru di Animal.java kemudian kita akses melalui MyClass.java</item>
+        <item>
+"    public class Animal {
+
+        // Ini method
+        public void ikan() {
+            System.out.println(\"Ini ikan\");
+        }
+        // Ini constructor
+        public Animal() {
+            System.out.println(\"hai\");
+        }
+    }"
+        </item>
+        <item>Sekarang kita bisa menggunakan fungsi ikan juga. Cukup tambahkan tanda (.) di objek class nya diikuti dengan nama fungsi</item>
+        <item>
+"    public class MyClass {
+        public static void main(String[] args) {
+            Animal test = new Animal();
+            test.ikan();
+        }
+    }
+    /*
+        hai
+        Ini ikan
+    */"
+        </item>
+        <item>Ingat bahwa constructor akan dieksekusi setiap kali objek nya dibuat, karena itu \"hai\" juga dicetak ke layar</item>
+    </string-array>
+
+    //static
+    <string-array name="Step4Sub5">
+        <item>Mungkin Kamu kebingungan tentang penggunaan static di Java. Terutama dia sudah muncul di program hello world kita</item>
+        <item>
+"    public static void main(String[] args)"
+        </item>
+        <item>Sekarang kita coba membuat fungsi di MyClass kita</item>
+        <item>
+"    public static void ikan() {
+        System.out.println(\"ini ikan\");
+    }
+
+    public static void main(String[] args) {
+        ikan();
+    }"
+        </item>
+        <item>Untuk mengakses method ikan kita hanya perlu menuliskan nama method nya saja karena ada static disana.</item>
+        <item>
+"    public void ikan() {
+        System.out.println(\"ini ikan\");
+    }
+
+    public static void main(String[] args) {
+        MyClass myClass = new MyClass();
+        myClass.ikan();
+    }"
+        </item>
+        <item>Dari kode diatas, jika tidak memakai static kita harus membuat objek dari class nya lebih dahulu untuk bisa mengakses method nya</item>
+        <item>Tentu nya static sangat berguna jika kita ingin mengakses method atau variable di suatu class.</item>
+        <item>
+"    static int a = 1;
+
+    public static void main(String[] args) {
+        System.out.println(a);
+    }"
+        </item>
+        <item>Jika tidak diberikan static maka Kamu harus membuat objek class nya terlebih dahulu untuk bisa mengakses variable a</item>
+        <item>Jika mengakses variable dengan objek Kamu tidak perlu menambahkan tanda ()</item>
+        <item>
+"    MyClass myClass = new MyClass();
+    System.out.println(myClass.a);"
+        </item>
+        <item>Ingat, pada dasarnya tanda () menandakan bahwa itu adalah fungsi atau method</item>
+    </string-array>
+
+    // package
+    <string-array name="Step4Sub6">
+        <item>Sekarang kita akan mengenal apa itu package.</item>
+        <item>Package adalah sarana untuk mengelompokan class - class menjadi 1. Sama seperti saat kita mengelompokan fungsi - fungsi menjadi 1 di sebuah file class</item>
+        <item>Jika Kamu membuat project Java menggunakan visual studio code, Kamu akan melihat nama package Kamu berasa dari lokasi file nya</item>
+        <item>Jika Kamu memiliki file MyClass.java di folder com/java/tutorial maka package nya akan menjadi com.java.tutorial</item>
+        <item>Ini seperti hanya mengubah nama panggilan, dari folder ke package. Karena pada dasarnya package itu adalah urutan folder untuk lokasi file Java class kita</item>
+        <item>Setiap file Java akan memiliki package, dan dia ditulis di paling atas bagian baris pertama pada file Java. Umumnya dia terlihat seperti ini</item>
+        <item>
+"    package com.my.tutorial;"
+        </item>
+        <item>Misalkan jika kita memiliki banyak fungsi (method), tentunya kita kategorikan dalam suatu class.</item>
+        <item>Anggaplah class MyClass memiliki fungsi untuk keperluan menghitung banyak siswa di dalam kelas.</item>
+        <item>Lalu kita memiliki banyak class lagi untuk keperluan menghitung siswa di seluruh sekolah, dan semua class itu akan kita kelompokan lagi menjadi package</item>
+        <item>Anggaplah package nya bernama com.hitung.siswasekolah</item>
+        <item>Kemudian kita bisa membuat package lagi, anggaplah fungsi package lainya untuk menghitung total penduduk dalam suatu provinsi</item>
+        <item>Dan kita beri nama com.hitung.provinsi</item>
+        <item>Kemudian package com.hitung.siswasekolah dan com.hitung.provinsi kita kelompokan lagi kedalam package com.indonesia</item>
+        <item>Dan begitu seterus nya. Ini hanya tentang pengelompokan, dan sebanyak apa pengelompokan yang kita buat tergantung pada keperluan kita.</item>
+        <item>Lalu bagaimana cara class MyClass.java mengakses fungsi di package provinsi?</item>
+        <item>Kita bisa menggunakan import</item>
+        <item>Sekarang anggaplah package provinsi memiliki class bernama Kabupaten dan memiliki fungsi hitungKabupaten()</item>
+        <item>
+"    package com.hitung.siswasekolah;
+    import com.hitung.provinsi.Kabupaten;
+
+    public class MyClass {
+        public static void main(String[] args) {
+            Kabupaten objek = new Kabupaten();
+            objek.hitungKabupaten();
+        }
+    }"
+        </item>
+        <item>Lihat pada baris pertama. Package mengasumsikan file atau class saat ini masuk dalam kelompok mana</item>
+        <item>Dan import digunakan untuk menghubungkan class saat ini dengan class lain berdasarkan kelompoknya.</item>
+        <item>Berdasarkan contoh diatas, kita hanya menghubungkan class Kabupaten. Kita bisa memilih langsung meng-import semua class di package com.hitung.provinsi</item>
+        <item>
+"    import com.hitung.provinsi.*;"
+        </item>
+        <item>Tanda bintang mengartikan semua. Artinya kita menghubungkan semua class yang ada di package com.hitung.provinsi</item>
+        <item>Cara ini jauh lebih mudah dibanding harus menulis kode yang sama berulang kali</item>
+        <item>Contoh lain adalah saat kita menggunakan Scanner untuk mengambil input user.</item>
+        <item>
+"    import java.util.Scanner;"
+        </item>
+        <item>Artinya class Scanner berada di package java.util dan masih ada banyak class lagi yang berada di package itu</item>
+        <item>Semua class itu berada pada direktori tempat kita menginstall JDK (Java Development Kit). JDK seperti kumpulan class yang sudah dibuat sedemikian rupa untuk memudahkan kita.</item>
+        <item>JDK mengandung banyak class dan library yang berguna untuk kita. Seperti Scanner misal nya</item>
+        <item>Biarkan file itu tetap disana dan jangan pernah mengubah nya atau akan terjadi error berkelanjutan.</item>
+    </string-array>
+
+    <string-array name="Step4Sub7">
+        <item>Sejauh ini mungkin Kamu sudah melihat pengubah akses, atau mungkin Kamu tidak menyadarinya?</item>
+        <item>Public adalah pengubah akses (access modifier), dia bisa membuat suatu class atau method bisa diakses dari mana saja</item>
+        <item>Untuk mendalami ini pastikan Kamu memahami konsep dasar penggunaan package dalam Java</item>
+        <item>Sekarang mari kita lihat apa saja access modifier di Java</item>
+        <item>public : membuat suatu method, class atau variable bisa diakses dari class manapun meskipun oleh class yang berada di package lain</item>
+        <item>private : membuat suatu method, variable atau class hanya bisa diakses di file class itu sendiri, jadi jika method ikan() di class Animal bersifat private, objek yang telah kita buat pun tidak bisa mengakses method ikan()</item>
+        <item>Jika Kamu tidak menetapkan pengubah akses nya maka dia akan diatur ke default nya, yaitu method, variable atau class tersedia untuk class manapun dengan catatan dia masih berada di package yang sama.</item>
+        <item>protected sama seperti default, dengan tambahan bahwa subclass dapat mengakses method, variable atau class yang di protected dari superclass</item>
+        <item>Untuk subclass dan superclass akan kita pelajari di masa mendatang. Sekarang fokuslah pada penggunaan private, public dan tanpa pengubah akses (default).</item>
+    </string-array>
+
+    <string-array name="Step4Sub8">
+        <item>Sekarang kita akan membahas tentang parameter dari sebuah fungsi atau method</item>
+        <item>
+"    public void MyFunction(String parameter) {
+
+    }"
+        </item>
+        <item>Parameter berada didalam tanda kurung dari sebuah method. Untuk tipe data nya Kamu bisa menggunakan tipe data yang lain juga.</item>
+        <item>Ini berfungsi untuk mengirimkan suatu nilai (berupa variable) kepada suatu method. Nilai dari parameter itu kemudian digunakan di badan method untuk melakukan sesuatu.</item>
+        <item>Dengan adanya parameter kita bisa menggunakan method berkali - kali dengan input yang berbeda - beda.</item>
+        <item>
+"    public static void MyFunction(String nama, int usia) {
+        System.out.println(\"Nama Saya \" + nama + \", usia Saya \" + usia);
+    }"
+        </item>
+        <item>Perhatikan bahwa MyFunction() memiliki 2 parameter yang dipisahkan dengan koma.</item>
+        <item>Ingatlah untuk menulis setiap jenis tipe data yang digunakan untuk masing - masing parameter.</item>
+        <item>Mari kita jalankan MyFunction() kita di fungsi utama, tentunya menggunakan input yang berbeda.</item>
+        <item>
+"    public class MyClass {
+
+        public static void MyFunction(String nama, int usia) {
+            System.out.println(\"Nama Saya \" + nama + \", usia Saya \" + usia);
+        }
+
+        public static void main(String[] args) {
+            MyFunction(\"Sasmita\", 19);
+            MyFunction(\"John\", 20);
+        }
+    }
+    /*
+        Nama Saya Sasmita, usia Saya 19
+        Nama Saya John, usia Saya 20
+    */"
+        </item>
+        <item>Kode menghasilkan 2 output yang berbeda pada bagian nama dan usia, padahal kita menggunakan 1 fungsi (metode) yang sama.</item>
+        <item>Ingatlah bahwa kita bisa menggunakan kembali suatu fungsi sebanyak yang kita perlukan.</item>
+    </string-array>
+
+    <string-array name="Step4Sub9">
+        <item>Sekarang kita akan belajar tentang getter dan setter. Namun sebelum itu kita akan memahami apa itu "this" dalam Java.</item>
+        <item>This artinya adalah class itu sendiri. Biasanya dia mengacu pada variable di class saat ini.</item>
+        <item>Jika MyClass.java menggunakan this, maka this yang dimaksud adalah MyClass.java itu sendiri.</item>
+        <item>
+"    private static int number;
+
+    public void setNumber(int number) {
+        this.number = number;
+    }"
+        </item>
+        <item>Perhatikan kode diatas, this.number mengacu pada variable number, sedangkan -- = number mengacu pada int number dari parameter.</item>
+        <item>Jika metode setNumber() dijalankan maka nilai variable number pada MyClass.java akan sama seperti nilai yang kita inputkan ke parameter.</item>
+        <item>
+"    public class MyClass {
+
+        private static int number;
+
+        // Ini setter
+        public void setNumber(int number) {
+            this.number = number;
+        }
+
+        // Ini getter
+        public int getNumber() {
+            return number;
+        }
+
+        public static void main(String[] args) {
+            MyClass myClass = new MyClass();
+            myClass.setNumber(20);
+            System.out.println(myClass.getNumber());
+        }
+    }"
+        </item>
+        <item>Perhatikan pada fungsi utama kita, awalnya kita membuat objek terlebih dahulu karena fungsi setNumber() dan getNumber() tidak static.</item>
+        <item>Kemudian kita mengakses metode setNumber() dan memberikan nilai 20 pada parameter. Itu artinya variable number pada MyClass.java kita akan diatur menjadi 20 juga</item>
+        <item>Ingatlah, variable number tidak bersifat final sehingga kita bisa mengubahnya kapanpun.</item>
+        <item>
+"    number = 20;
+    // Pada setter kita menggunakan ini
+    this.number = number;"
+        </item>
+        <item>Setelah memberikan nilai pada variable number, kita bisa mengambil nilai tersebut menggunakan metode getNumber()</item>
+        <item>
+"    public int getNumber() {
+        return number;
+    }"
+        </item>
+        <item>Lihatlah bahwa getNumber() mengembalikan integer, dan yang dikembalikan adalah nilai yang diambil dari variable number.</item>
+        <item>Proses ini disebut getter dan setter. Getter (mengambil/mengembalikan), setter (mengatur/menetapkan)</item>
+        <item>Setter dari kode kita adalah fungsi setNumber(), saat kita menggunakan nya dia akan mengatur nilai untuk variable number</item>
+        <item>Sedangkan getter dari kode kita adalah fungsi getNumber(), disebut getter karena dia dapat mengambil nilai dari variable number.</item>
+    </string-array>
+
+</resources>

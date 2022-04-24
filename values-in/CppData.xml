@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Step 1 -->
+    <!--Apa Itu C++ -->
+    <string-array name="Step1CPPsub1">
+        <item>Sekarang kita akan mengenal tentang C++</item>
+        <item>C++ bisa dikatakan seperti bahasa pemrograman C yang ditingkatkan. Ini karena C++ merupakan pengembangan dari bahasa C. </item>
+        <item>Dia dikembangkan oleh Bjarne Stroustrup di Bell Labs pada awal tahun 1970</item>
+        <item>Jika Kamu familiar dengan Java, maka Kamu akan melihat kedua bahasa ini memiliki banyak kemiripan</item>
+        <item>Untuk menjalankan program C++, Kamu membutuhkan compiler yang bertugas mengubah bahasa C++ kita menjadi bahasa mesin</item>
+        <item>Dan biasanya setiap bahasa pemrograman memiliki compiler nya sendiri</item>
+        <item>Selain itu Kamu juga membutuhkan debugger untuk mendeteksi kode mana yang salah atau kurang tepat. Ini sangat memudahkan kita untuk memecahkan error pada program</item>
+        <item>Itu artinya, Kamu akan membutuhkan IDE (Integrated Development and Environment). Dia adalah alat yang sudah memiliki perlengkapan sesuai kebutuhan kita</item>
+        <item>IDE mencakup editor, compiler dan debugger. Tentu nya dengan tampilan dan nuansa yang cantik</item>
+        <item>Ada banyak sekali IDE gratis untuk C++ yang bisa Kamu gunakan. Pilihlah sendiri sesuai seleramu</item>
+    </string-array>
+    <!--Hello World!-->
+    <string-array name="Step1CPPsub2">
+        <item>Sekarang kita akan mencoba membuat program yang mencetak teks "hello world"</item>
+        <item>
+"    #include &lt;iostream>
+    using namespace std;
+
+
+    int main() {
+        cout &lt;&lt; \"Hello world\" &lt;&lt; endl;
+        cout &lt;&lt; \"Ini untuk \\nEnter\";
+        return 0;
+    }"
+        </item>
+        <item>Kita akan pecah kode diatas satu persatu</item>
+        <item>
+"    #include &lt;iostream>"
+        </item>
+        <item>Dia adalah header dalam C++, untuk materi ini akan kita pelajari di pembahasan selanjutnya</item>
+        <item>
+"    using namespace std;"
+        </item>
+        <item>Sama seperti yang tertulis disana, kode diatas disebut namespace, dia berguna untuk memudahkan penulisan kita</item>
+        <item>tidak perlu takut, ini juga akan kita bahas di materi selanjutnya</item>
+        <item>
+"    int main() {
+        // Kode mu disini
+        return 0;
+    }"
+        </item>
+        <item>Semua program kita harus berakhir di fungsi main karena dia adalah fungsi utama kita</item>
+        <item>Untuk saat ini yang harus Kamu ingat adalah, compiler akan menjalankan kode apapun yang ada di dalam fungsi main tersebut</item>
+        <item>dan Kamu mungkin melihat return 0; di bagian akhir dari fungsi main</item>
+        <item>ini menandakan dia tidak mengembalikan apapun. Tidak perlu takut jika Kamu tidak mengerti</item>
+        <item>beberapa tidak akan kita bahas disini dan akan ada materi terpisah untuk membahas nya.</item>
+        <item>
+"    cout &lt;&lt; \"Hello world\" &lt;&lt; endl;
+    cout &lt;&lt; \"Ini untuk \\nEnter\";"
+        </item>
+        <item>Dia digunakan untuk mencetak teks, perhatikan penggunaan cout dan juga tanda &lt;&lt;</item>
+        <item>Jangan lupakan tanda semicolon (;) di akhir kode atau compiler akan mengembalikan error</item>
+        <item>Tanda endl berarti baris baru, itu berlaku juga untuk \\n yang digunakan untuk membuat baris baru</item>
+    </string-array>
+    <!--Header-->
+    <string-array name="Step1CPPsub3">
+        <item>Seperti contoh pada program hello world sebelum nya, Kamu telah melihat header standar di C++</item>
+        <item>
+"    #include &lt;iostream>"
+        </item>
+        <item>Header digunakan untuk memasukan library yang telah ada ke dalam program untuk memudahkan kita</item>
+        <item>karena itu ada kata include disana yang berarti (termasuk).</item>
+        <item>Tanda &lt; ... > mengapit nama header yang kita gunakan. Nama header yang Kamu gunakan tergantung dengan apa yang Kamu butuhkan.</item>
+        <item>Contoh penggunaan header iostream adalah saat kita menggunakan cout untuk output</item>
+        <item>
+"    cout &lt;&lt; \"Hello world\" &lt;&lt; endl;"
+        </item>
+        <item>Jika Kamu tidak mendeklarasikan header iostream maka Kamu tidak bisa menggunakan cout.</item>
+        <item>Jika Kamu mencoba menggunakan cout tanpa mendeklarasikan header iostream terlebih dahulu, maka compiler akan meninggalkan pesan error untuk mu</item>
+        <item>error: ‘cout’ was not declared in this scope</item>
+        <item>Kesimpulan nya adalah, cout merupakan salah satu fitur dari header iostream</item>
+        <item>Header iostream sudah digunakan sebagai standar input - output dalam C++</item>
+        <item>Namun tidak menutup kemungkinan untuk kamu menggunakan header yang lain</item>
+    </string-array>
+    <!--Namespace-->
+    <string-array name="Step1CPPsub4">
+        <item>Di materi sebelumnya Kamu sudah melihat penggunaan namespace pada program C++</item>
+        <item>
+"    #include &lt;iostream>
+    using namespace std;"
+        </item>
+        <item>Sekarang kita akan membuat contoh jika tidak menggunakan namespace</item>
+        <item>
+"    #include &lt;iostream>
+
+    int main() {
+        std::cout &lt;&lt; \"Hello World\" &lt;&lt; std::endl;
+        return 0;
+    }"
+        </item>
+        <item>Jika kita tidak menggunakan namespace std, maka setiap penulisan cout, cin, endl atau apapun yang mencakup fitur dari header &lt;iostream> harus ditambahkan syntax std::</item>
+        <item>Untuk penjelasan perintah cin akan kita bahas nanti, sekarang fokuslah pada apa yang terjadi jika kita tidak menggunakan namespace</item>
+        <item>Dan tentu nya ini akan membuat kode kita menjadi lebih panjang</item>
+        <item>Jadi menambahkan namespace std akan mempercepat proses coding kita</item>
+        <item>Menggunakan nya atau tidak adalah opsional, namun dalam pembelajaran ini kita akan menggunakan fitur tersebut</item>
+    </string-array>
+    <!--Variable-->
+    <string-array name="Step1CPPsub5">
+        <item>Sekarang kita akan mempelajari variable</item>
+        <item>Singkatnya variable seperti wadah untuk menampung sesuatu. Namun dalam pemrograman, jenis yang ditampung dalam variable harus sesuai dengan jenis wadah nya.</item>
+        <item>Misalkan Kamu memiliki wadah berbentuk kotak, maka isian nya juga harus berbentuk kotak. Ini membuat kita bisa lebih mudah mengelola data apa yang kita tampung.</item>
+        <item>Jenis ini biasa disebut dengan tipe data</item>
+        <item>Sekarang mari kenali dulu macam - macam tipe data pada variable di C++</item>
+        <item>
+"    int bilanganBulat;
+    float desimal;
+    double desimalExtra;
+    bool boolean;
+    char character;
+    string words;
+
+    int main() {
+
+    }"
+        </item>
+        <item>Mari kita bahas satu persatu</item>
+        <item>Integer (int), digunakan untuk menampung bilangan bulat. Ingat bahwa berapapun angka yang tidak mengandung koma (desimal) adalah bilangan bulat.</item>
+        <item>Floating Point (float), untuk menampung angka desimal</item>
+        <item>Double (double), sama seperti float yang menampung nilai desimal, namun double memiliki pecahan yang lebih banyak.</item>
+        <item>Boolean (bool), untuk menyimpan nilai true atau false. True akan bernilai 1 dan false akan bernilai 0.</item>
+        <item>Character (char), sama seperti namanya, dia digunakan untuk menyimpan karakter. Ini berarti dia hanya menyimpan 1 huruf. Nilai nya harus diapit dengan tanda kutip tunggal (\')</item>
+        <item>String (string), ini seperti kumpulan char yang dijadikan satu, Kamu bisa menggunakan tipe data ini untuk menyimpan sebuah kata ataupun kalimat.</item>
+        <item>Untuk mengisi variable itu kamu bisa langsung menggunakan nama variable nya diikuti dengan nilai yang ingin Kamu tetapkan</item>
+        <item>
+"    #include &lt;iostream>
+    using namespace std;
+
+
+    int bilanganBulat;
+
+    int main() {
+        bilanganBulat = 15;
+        cout &lt;&lt; bilanganBulat; // 15
+        bilanganBulat = 20;
+        cout &lt;&lt; bilanganBulat; // 20
+    }"
+        </item>
+        <item>Kamu juga bisa menetapkan nilai default dari suatu variable jika tidak ada nilai lain yang ditetapkan</item>
+        <item>
+"    int bilanganBulat = 12;
+    float desimal = 5.0;
+    double desimalExtra = 5.0;
+    bool boolean = true;
+    char character = \'A\';
+    string words = \"Hai, Saya adalah programmer\";"
+        </item>
+        <item>Proses ini biasa disebut dengan meng-inisialisasi</item>
+        <item>Artinya nilai yang sudah Kamu tetapkan diatas akan menjadi nilai default dari variable tersebut</item>
+        <item>Dan nilai itu akan digunakan sebagai opsi terakhir ketika tidak ada nilai baru yang ditetapkan</item>
+    </string-array>
+    <!--Komentar-->
+    <string-array name="Step1CPPsub6">
+        <item>Komentar digunakan untuk memudahkan kita mengingat alur program</item>
+        <item>dia tidak akan di eksekusi oleh compiler. Ini seperti kita meinggalkan catatan pada program kita</item>
+        <item>
+"    // Ini komentar satu baris
+    /* ini komentar
+        multi baris */"
+        </item>
+        <item>Kamu bisa menambahkan komentar sebanyak apapun dan dimanapun</item>
+        <item>Tapi ingat, semakin banyak komentar yang Kamu tambahkan, semakin besar pula ukuran file pogram Kamu</item>
+    </string-array>
+    <!--Input User-->
+    <string-array name="Step1CPPsub7">
+        <item>Di materi sebelumnya Kamu sudah mempelajari cara mencetak teks. Sekarang kita akan mempelajari cara mengambil input dari user melalui terminal</item>
+        <item>Input dari user harus ditampung di suatu variable agar bisa kita panggil kapanpun</item>
+        <item>Jenis tipe data yang di inputkan user harus sama seperti tipe data dari variable penampung nya.</item>
+        <item>jika tidak, maka compiler akan mengembalikan error lagi. Namun tenang saja, dia selalu memberitahu kita bagian mana kah yang salah</item>
+        <item>
+"    int main() {
+        string nama;
+        int usia;
+        cout &lt;&lt; \"Masukan nama   : \"; cin >> nama;
+        cout &lt;&lt; \"Masukan usia   : \"; cin >> usia;
+        return 0;
+    }"
+        </item>
+        <item>Perhatikan bahwa kita menggunakan cin diikuti tanda >> untuk mengambil input user</item>
+        <item>cin akan meminta input dari user dan menyimpan nya pada variable yang sudah ditentukan</item>
+        <item>setelah nilai sudah disimpan pada variable, maka kita bisa mengakses nilai tersebut kapan saja </item>
+        <item>
+"    cout &lt;&lt; nama &lt;&lt; \" berusia \" &lt;&lt; usia + 5;"
+        </item>
+        <item>Dia akan mencetak nama sesuai dengan yang di inputkan oleh user, namun usia yang di inputkan oleh user akan ditambah 5</item>
+        <item>Hebat, sekarang Kamu bisa berinteraksi dengan user!</item>
+    </string-array>
+    <!--Operator-->
+    <string-array name="Step1CPPsub8">
+        <item>Dalam sekolah mu, mungkin Kamu sudah pernah mempelajari tentang operator aritmatika</item>
+        <item>Dalam pemrograman kita juga akan menggunakan nya</item>
+        <item>Dia adalah penjumlahan (+), pengurangan (-), perkalian (*), pembagian (/) dan modulo (%).</item>
+        <item>Mungkin ada 1 operator aritmatika yang harus kita bahas, yaitu modulo</item>
+        <item>Modulo bekerja mirip seperti pembagian, perbedaan nya adalah pembagian mengembalikan hasil nya sedangkan modulo mengembalikan sisa nya</item>
+        <item>Jika 11/9 = 1,2 maka dalam pembagian dia akan menghasilkan 1 jika disimpan dalam variable int, dan menghasilkan 1,2 jika disimpan dalam variable double atau float</item>
+        <item>sedangkan dia akan mengembalikan 2 jika menggunakan modulo, karena 11/9 adalah 1 dan masih menyisakan 2</item>
+        <item>
+"    int a = 20 + 5;
+    float b = 11 / 9;
+    int c = 2 * 2;
+    int d = 11 % 9;
+    int e = 2 - 1;"
+        </item>
+        <item>Ingatlah untuk selalu mengakhiri baris kode mu dengan titik koma.</item>
+        <item>Kamu juga bisa menggunakan operator penugasan untuk mempersingkat kode</item>
+        <item>
+"    int a += 12;"
+        </item>
+        <item>Kode diatas berarti int a = a + 12;</item>
+        <item>Variable a akan ditambah 12 kemudian akan menyimpan nya di variable yang sama. Ini memudahkan kita agar tidak perlu membuat variable baru untuk setiap nilai baru</item>
+        <item>Operator penugasan berlaku untuk semua operator aritmatika dasar, cukup ubah tanda plus (+) dari kode diatas sesuai dengan operator yang ingin Kamu gunakan</item>
+    </string-array>
+    <!--Increment & Decrement-->
+    <string-array name="Step1CPPsub9">
+        <item>Sesuai dengan nama nya, increment untuk menaikan suatu nilai dan decrement untuk menurunkan suatu nilai</item>
+        <item>Di materi sebelum nya Kamu mempelajari tentang operator penugasan, dia bekerja mirip dengan increment atau decrement</item>
+        <item>Perbedaan nya adalah, dalam operator penugasan Kamu bisa mengatur berapapun kelipatan untuk di tambah, di kurangi, di kalikan, di bagi ataupun di modulo</item>
+        <item>Dan juga operator penugasan bisa menggunakan semua jenis operator aritmatika</item>
+        <item>sedangkan increment dan decrement hanya menggunakan operator tambah (+) dan kurang (-) yang hanya mengubah angka nya sebesar 1</item>
+        <item>
+"    int main() {
+        int x = 1;
+
+        // increment
+        x++; // sama dengan int x = x + 1;
+        cout &lt;&lt; x &lt;&lt; endl; // 2
+
+        // decrement
+        x--; // sama dengan int x = x - 1;
+        cout &lt;&lt; x &lt;&lt; endl; // 1
+    }"
+        </item>
+        <item>Perhatikan pada bagian decrement, nilai x awalnya adalah 2 karena sudah melewati increment, sehingga saat dikurangi 1 dia mengembalikan 1</item>
+        <item>Sekarang mari berkenalan dengan prefix dan postfix</item>
+        <item>
+"    int x = 34;
+    cout &lt;&lt; x &lt;&lt; endl; // output 34
+    int y = ++x; // ini adalah prefix
+    cout &lt;&lt; y &lt;&lt; endl; // output 35
+    cout &lt;&lt; x &lt;&lt; endl; // output 35"
+        </item>
+        <item>prefix menaik kan nilai x terlebih dahulu (++) sebanyak 1, kemudian menggunakan nilai terbaru nya (x) dan disimpan dalam variable y</item>
+        <item>
+"    int x = 34;
+    cout &lt;&lt; x &lt;&lt; endl; // output 34
+    int y = x++; // ini adalah postfix
+    cout &lt;&lt; y &lt;&lt; endl; // output 34
+    cout &lt;&lt; x &lt;&lt; endl; // output 35"
+        </item>
+        <item>postfix menggunakan nilai lama nya (x) dan disimpan dalam variable y, kemudian nilai x baru dinaikan 1 (++)</item>
+        <item>Perhatikan ulang output dari nilai variable x, sebelum dan sesuah melewati prefix maupun postfix!</item>
+        <item>prefix dan postfix juga dapat menggunakan decrement, cukup ganti tanpa plus (+) menjadi (-).</item>
+        <item>Dan tentu nya nilai x tidak lagi ditambah 1, melainkan dikurangi 1</item>
+    </string-array>
+
+
+    <!-- Step 2 Loop -->
+    <!--Pernyataan if-->
+    <string-array name="Step2CPPsub1">
+        <item>Sekarang kita akan belajar tentang perulangan if else</item>
+        <item>if else digunakan untuk membandingkan sesuatu, mari kita buat analogi sederhana untuk mu</item>
+        <item>Jika nomor tiket adalah 10 maka dia mendapat sepeda. Jika bukan 10 maka dia mendapat buku</item>
+        <item>
+"    int main() {
+        int nomorTiket = 10;
+        if (nomorTiket == 10) {
+            cout &lt;&lt; \"Dapat sepeda\" &lt;&lt; endl;
+        } else {
+            cout &lt;&lt; \"Dapat buku\" &lt;&lt; endl;
+        }
+    }"
+        </item>
+        <item>Output kode diatas akan menghasilkan "Dapat sepeda" karena nomorTiket adalah 10.</item>
+        <item>Sedangkan jika nomorTiker bukan 10, maka program di dalam else akan dijalankan dan mencetak teks \"Dapat buku\"</item>
+        <item>else seperti jalan terakhir jika kondisi dari if salah</item>
+        <item>Perhatikan tanda ==, disini kita menggunakan 2 tanda == untuk membandingkan kondisi didalam if</item>
+        <item>Kamu juga bisa menggunakan tanda pembanding yang lain</item>
+        <item>kurang dari (&lt;), lebih besar dari (>), kurang dari sama dengan (&lt;=) atau lebih besar dari sama dengan (>=)</item>
+    </string-array>
+    <!--Pernyataan if bersarang-->
+    <string-array name="Step2CPPsub2">
+        <item>Dari nama nya Kamu bisa mengerti maksud bersarang, yaitu if didalam if. Mari buat analogi sederhana untuk mu</item>
+        <item>Jika nomor tiket adalah 10 maka periksa apakah dia panitia atau bukan, jika panitia maka hadiah tidak diberikan, jika bukan panitia maka hadiah diberikan</item>
+        <item>
+"    int main() {
+        int nomorTiket = 10;
+        string status = \"panitia\";
+        if (nomorTiket == 10) {
+            if (status == \"panitia\") {
+                cout &lt;&lt; \"Hadiah batal\" &lt;&lt; endl;
+            } else {
+                cout &lt;&lt; \"Dapat sepeda\" &lt;&lt; endl;
+            }
+        } else {
+            cout &lt;&lt; \"Dapat buku\" &lt;&lt; endl;
+        }
+    }"
+        </item>
+        <item>Kode diatas akan menghasilkan \"Hadiah batal\" karena status mya adalah panitia</item>
+        <item>Jika status berisi nilai apapun selain \"panitia\" maka output nya adalah \"Dapat sepeda\"</item>
+        <item>Perhatikan bahwa kita juga menambahkan else di dalam if bersarang</item>
+        <item>else dapat ditambahkan selama dia digabungkan dengan perulangan if</item>
+        <item>atau Kamu juga bisa untuk tidak menggunakan else karena if tidak masalah tanpa else</item>
+        <item>sedangkan else harus selalu disatukan dengan if</item>
+        <item>Ingatlah bahwa Kamu hanya bisa menambahkan 1 else untuk setiap perulangan if</item>
+    </string-array>
+    <!--Operator Logika-->
+    <string-array name="Step2CPPsub3">
+        <item>Terkadang kita ingin menambahkan logika lagi pada perulangan if namun tidak ingin membuat if bersarang</item>
+        <item>Mari kita ambil dari analogi contoh if bersarang dari materi sebelum ny</item>
+        <item>Jika nomor tiket adalah 10 maka periksa apakah dia panitia atau bukan, jika panitia maka hadiah tidak diberikan, jika bukan panitia maka hadiah diberikan</item>
+        <item>
+"    int main() {
+        int nomorTiket = 10;
+        string status = \"bukan panitia\";
+        if (nomorTiket == 10 &amp;&amp; status != "panitia") {
+            cout &lt;&lt; \"Dapat sepeda\";
+        } else {
+            cout &lt;&lt; \"Hadiah batal\";
+        }
+    } // output : Dapat sepeda"
+        </item>
+        <item>Perhatikan tanda != yang berarti bukan (NOT), artinya status harus bernilai apapun selain \"panitia\"</item>
+        <item>juga lihatlah pada operator logika &amp;&amp; (dan), jika menggunakan operator logika ini maka kedua kondisi harus benar</item>
+        <item>nomorTiket harus 10 dan status harus bernilai apapun selain \"panitia\"</item>
+        <item>Kamu juga bisa menggunakan operator || (atau), dia akan bernilai benar jika salah satu dari kondisi nya benar</item>
+        <item>
+"    int main() {
+        int nomorTiket = 10;
+        string status = \"panitia\";
+        if (nomorTiket == 10 || status != \"panitia\") {
+            cout &lt;&lt; \"Dapat sepeda\";
+        } else {
+            cout &lt;&lt; \"Hadiah batal\";
+        }
+    } // output : Dapat sepeda"
+        </item>
+        <item>Kondisi di if tetap dijalankan karena perbandingan pada nomorTiket benar walaupun perbandingan pada status nya salah</item>
+        <item>else baru akan dijalankan jika perbandingan kedua nya bernilai salah</item>
+    </string-array>
+    <!--Operator else if-->
+    <string-array name="Step2CPPsub4">
+        <item>Dalam c++ Kamu bisa menggunakan else if, dengan syarat bahwa else if harus disatukan dengan if</item>
+        <item>else if akan dijalankan jika kondisi di dalam if salah. </item>
+        <item>else if mirip seperti if, perbedaan nya adalah dia tidak bisa berdiri sendiri dan harus selalu disatukan dengan if</item>
+        <item>
+"    int main() {
+        int nomorTiket = 10;
+        if (nomorTiket == 1) {
+            cout &lt;&lt; \"satu\";
+        } else if (nomorTiket == 10) {
+            cout &lt;&lt; \"sepuluh\";
+        } else if (nomorTiket == 20) {
+            cout &lt;&lt; \"dua puluh\";
+        } else {
+            cout &lt;&lt; \"semua salah\";
+        }
+    } // output : sepuluh "
+        </item>
+        <item>Perhatikan bahwa kita hanya memiliki 1 else, namun ada 2 else if disana</item>
+        <item>Jika nomor tiket nya adalah 10 maka kondisi di if salah dan dia akan melanjutkan pengecekan ke else if dan else if seterus nya</item>
+        <item>Namun jika tidak ada if maupun else if yang benar, maka else akan dijalankan sebagai tindakan terakhir</item>
+        <item>Jika tidak ada else disana maka tidak ada apapun yang harus di eksekusi.</item>
+        <item>Kamu bisa menambahkan else if sebanyak yang Kamu butuhkan</item>
+    </string-array>
+    <!--Pernyataan Switch-->
+    <string-array name="Step2CPPsub5">
+        <item>Di materi sebelum nya Kamu sudah mengenal tentang else if</item>
+        <item>Perulangan switch bekerja mirip seperti else if, dia akan mencari perbandingan mana yang benar dan meng-eksekusi nya</item>
+        <item>
+"    int main() {
+        int nomorTiket = 11;
+        switch (nomorTiket) {
+            case 1:
+                cout &lt;&lt; \"satu\";
+                break;
+            case 11:
+                cout &lt;&lt; \"sebelas\";
+                break;
+            case 20:
+                cout &lt;&lt; \"dua puluh\";
+                break;
+            default:
+                cout &lt;&lt; \"semua salah\";
+        }
+    }"
+        </item>
+        <item>Perhatikan bagaimana variable diletakan didalam tanda kurung switch. Artinya nilai dari variable itulah yang akan dicari perbandingan nya</item>
+        <item>Selalu perhatikan indentasi dari case dan break, jika Kamu melupakan break maka perbandingan di bawah nya juga akan di eksekusi</item>
+        <item>Ini akan menghasilkan error logika yang tidak bisa ditunjukan oleh debugger</item>
+        <item>Perhatikan baik - baik pada bagian default dan fakta bahwa tidak ada break disana</item>
+        <item>default bekerja seperti else, dia akan di eksekusi sebagai tindakan terakhir jika tidak ada perbandingan apapun yang benar di setiap case nya.</item>
+        <item>Selain tipe data int, Kamu juga bisa membandingkan tipe data string untuk setiap case nya, cukup apit nilai dari case dengan tanda petik ganda</item>
+    </string-array>
+    <!--Perulangan While-->
+    <string-array name="Step2CPPsub6">
+        <item>Sekarang kita akan mempelajari perulangan while</item>
+        <item>dia akan dijalankan dan terus berjalan selama kondisi nya benar</item>
+        <item>
+"    int main() {
+        int nomorTiket = 11;
+        while (nomorTiket == 11) {
+            cout &lt;&lt; \"y\";
+        }
+    }"
+        </item>
+        <item>Terminal akan mencetak huruf y selama nya karena nomorTiket selalu bernilai 11 yang menyebabkan kondisi di dalam while selalu benar</item>
+        <item>
+"    int main() {
+        int nomorTiket = 11;
+        int position = 0;
+        while (nomorTiket == 11) {
+            cout &lt;&lt; \"test\" &lt;&lt; endl;
+            if (position == 2) {
+                nomorTiket = 5;
+            }
+            position++;
+        }
+    }
+    /*
+        test
+        test
+        test    */"
+        </item>
+        <item>Pehatikan bahwa setiap while dijalankan, dia akan menaikan nilai position sebesar 1, kemudian jika nilai pada variable position bernilai 2 maka nilai variable nomorTiket dirubah</item>
+        <item>dengan dirubahnya nilai pada variable nomorTiket, menyebabkan kondisi pada pernyataan while menjadi salah</item>
+        <item>dan di saat inilah program pada while berhenti di eksekusi</item>
+    </string-array>
+    <!--Perulangan Do While-->
+    <string-array name="Step2CPPsub7">
+        <item>Sekarang kita akan akan belajar tentang perulangan do while</item>
+        <item>do akan di eksekusi minimal 1 kali tidak perduli kondisi while nya benar atau salah. </item>
+        <item>Jika kondisi nya benar maka do akan di eksekusi lagi, namun jika salah maka dia akan berhenti di eksekusi</item>
+        <item>Mari kita buat contoh analogi sederhana untuk mu</item>
+        <item>Jika usia kurang dari atau sama dengan 10 maka dia anak - anak, jika lebih besar dari 10 maka dia remaja. Kemudian tanyakan lagi apakah ingin mengulang program, jika ya maka program diulang, jika tidak maka program dihentikan</item>
+        <item>
+"    int main() {
+        int usia;
+        char repeat = \'n\';
+        bool kondisi;
+        do {
+            cout &lt;&lt; \"Masukan usia : \"; cin >> usia;
+            if (usia &lt;= 10) {
+                cout &lt;&lt; \"anak - anak\" &lt;&lt; endl;
+            } else if (usia > 10) {
+                cout &lt;&lt; \"remaja\" &lt;&lt; endl;
+            } else {
+                cout &lt;&lt; \"Input tidak sesuai\" &lt;&lt; endl;
+            }
+
+            cout &lt;&lt; \"Ingin mengulang program (y/n) ? \"; cin >> repeat;
+            if (repeat == \'y\') {
+                kondisi = true;
+            } else {
+                kondisi = false;
+            }
+        } while (kondisi == true);
+    }"
+        </item>
+        <item>Perhatikan bahwa do akan di eksekusi 1 kali, tidak perduli kondisi di while benar atau salah. Bahkan kita belum menetapkan nilai untuk variable kondisi</item>
+        <item>Setelah user meng input kan usia, program if else di jalankan untuk memeriksa apakah dia anak - anak atau remaja.</item>
+        <item>Kemudian kita meminta input lagi apakah user ingin mengulang program, jika y maka kondisi bernilai true dan membuat pernyataan while bernilai benar</item>
+        <item>while akan mengulang kode dari awal, yaitu dari do</item>
+        <item>Namun jika user memilih n maka kondisi di while akan salah dan dia tidak akan dijalankan</item>
+        <item>Walaupun while tidak jadi dijalankan, namun kita telah menjalankan do sebanyak 1 kali</item>
+        <item>Itu artinya alur dari program ini adalah, do dijalankan dan setelah selesai dia kemudian menjalankan while, jika while benar maka do dijalankan lagi dan setelah selesai, program akan menjalankan while lagi</item>
+        <item>dan begitu seterus nya..</item>
+        <item>Sekarang Kamu telah memahami konsep do while, teruslah belajar!</item>
+    </string-array>
+    <!--Perulangan for-->
+    <string-array name="Step2CPPsub8">
+        <item>Sebelum belajar lebih lanjut tentang for, kenali dulu syntax (penulisan) dari perulangan for</item>
+        <item>
+"    for (inisialisasi; kondisi; increment/decrement) {
+        // pernyataan
+    }"
+        </item>
+        <item>Sekarang mari kita membuat program untuk mencetak angka 1 sampai 5 menggunakan for</item>
+        <item>
+"    int main() {
+        for (int a = 1; a &lt;= 5; a++) {
+            cout &lt;&lt; a &lt;&lt; endl;
+        }
+    }
+    /*
+        1
+        2
+        3
+        4
+        5    */"
+        </item>
+        <item>variable a yang telah kita inisialisasi akan digunakan sebagai nilai awal untuk perulangan for</item>
+        <item>kemudian a akan diperiksa apakah kurang dari atau sama dengan 5. Jika tidak maka a akan dinaikan 1 (a++)</item>
+        <item>Sekarang mari membuat contoh untuk penggunaan decrement nya. Kita akan mencoba mencetak dari angka 5 sampai 1</item>
+        <item>
+"    int main() {
+        for (double a = 5; a >= 1; a--) {
+            cout &lt;&lt; a &lt;&lt; endl;
+        }
+    }
+    /*
+        5
+        4
+        3
+        2
+        1   */"
+        </item>
+        <item>Perhatikan baik - baik pada kondisi nya, selama a lebih besar atau sama dengan 1 maka nilai a akan dikurangi 1</item>
+        <item>Selain menggunakan increment dan decrement, Kamu juga bisa menggunakan operator penugasan untuk menetapkan kelipatan nya</item>
+        <item>
+"    int main() {
+        for (double a = 1; a &lt;= 5; a+=2) {
+            cout &lt;&lt; a &lt;&lt; endl;
+        }
+    }
+    /*
+        1
+        3
+        5   */"
+        </item>
+        <item>Sekarang output nya akan menjadi kelipatan 2</item>
+        <item>Hebat-!! Kamu sudah memahami semua perulangan pada C++, teruslah semangat belajar dan jangan lupa bermain - main lah dengan kode</item>
+        <item>Jangan menjadi programmer yang malas-!!</item>
+    </string-array>
+
+
+    <!-- Step 3 Function -->
+    <!--Function-->
+    <string-array name="Step3CPPsub1">
+        <item>Fungsi sering disebut dengan metode (method)</item>
+        <item>Fungsi adalah salah satu cara untuk kita mengelompokan kode. Ini akan membuat kode kita menjadi lebih ringkas</item>
+        <item>Tidak hanya itu, fungsi dapat membuat kita bisa menggunakan kode yang sama berulang kali</item>
+        <item>Sekarang mari membuat contoh fungsi untuk menampilkan menu makanan dan minuman</item>
+        <item>
+"    #include &lt;iostream>
+    using namespace std;
+
+    // function
+    void menu() {
+        cout &lt;&lt; \"Menu : \" &lt;&lt; endl;
+        cout &lt;&lt; \"1. Sea Food\" &lt;&lt; endl;
+        cout &lt;&lt; \"2. Chicken\" &lt;&lt; endl;
+        cout &lt;&lt; \"3. Juice\" &lt;&lt; endl;
+    }
+
+    int main() {
+        menu();
+    }"
+        </item>
+        <item>Kita menetapkan menu sebagai nama fungsi dan menetapkan void sebagai tipe pengembalian nya</item>
+        <item>Untuk tipe pengembalian akan kita bahas di masa mendatang.</item>
+        <item>Untuk memanggil sebuah fungsi, kita menggunakan nama fungsi nya diikuti dengan tanda ()</item>
+        <item>Ingatkah Kamu bahwa semua kode kita harus berakhir di fungsi main?</item>
+        <item>Karena itulah kita memanggil fungsi menu() di metode utama kita</item>
+        <item>Kamu juga bisa memanggil fungsi menu sebanyak yang Kamu butuhkan</item>
+        <item>
+"    int main() {
+        menu();
+        menu();
+        menu();
+        menu();
+    }"
+        </item>
+        <item>Jelas ini lebih mempermudah kita dibandingkan harus menulis ulang semua kode yang ada di dalam fungsi menu() berkali - kali</item>
+        <item>Selalu ingat untuk memanggil fungsi menu() di metode utama kita atau fungsi itu tidak akan dijalankan</item>
+    </string-array>
+    <!--Parameter-->
+    <string-array name="Step3CPPsub2">
+        <item>Fungsi memiliki attribute parameter yang membuat kita dapat menetapkan nilai yang berbeda untuk tiap - tiap variable</item>
+        <item>
+"    void myFunction(int parameter) {
+
+    }"
+        </item>
+        <item>Paratemer berada di antara tanda kurung dari sebuah method</item>
+        <item>Dia berfungsi untuk mengirim sebuah nilai dalam bentuk variable ke fungsi tersebut</item>
+        <item>Kode apapun yang berada di fungsi myFunction() dapat menggunakan variable di parameter.</item>
+        <item>Untuk tipe data nya Kamu bisa menggunakan tipe data yang sama seperti membuat variable pada umumnya</item>
+        <item>
+"    void nama(string nama) {
+        cout &lt;&lt; \"Nama Saya adalah \" &lt;&lt; nama &lt;&lt; endl;
+    }"
+        </item>
+        <item>Nilai pada variable nama saat ini adalah kosong, dan kita akan menetapkan nilai nya saat memanggil fungsi tersebut</item>
+        <item>
+"    int main() {
+        nama(\"John\");
+        nama(\"Smith\");
+    }
+    /*
+        Nama Saya adalah : John
+        Nama Saya adalah : Smith */"
+        </item>
+        <item>Fungsi membuat kita dapat menggunakan kode yang sama dengan nilai variable yang berbeda</item>
+    </string-array>
+    <!--Multiple Parameter-->
+    <string-array name="Step3CPPsub3">
+        <item>Terkadang kita akan membutuhkan fungsi namun dengan banyak variable yang harus di modifikasi</item>
+        <item>kita bisa menggunakan multiple parameter, kita hanya harus memberikan tanda koma untuk tiap - tiap parameter nya</item>
+        <item>
+"    void myFunction(string nama, int usia) {
+        // kode mu
+    }"
+        </item>
+        <item>Untuk setiap parameter nya kita harus menetapkan tipe data nya juga, jangan lupa untuk memisahkan mereka dengan tanda koma</item>
+        <item>Sekarang Kamu bisa menggunakan variable nama dan usia di dalam fungsi myFunction() dan menetapkan nilai nya ketika memanggil fungsi tersebut</item>
+    </string-array>
+    <!--Nilai Default Parameter-->
+    <string-array name="Step3CPPsub4">
+        <item>Kita dapat menetapkan nilai default untuk suatu parameter</item>
+        <item>dia bekerja mirip seperti saat kita menginisialisasi sebuah variable</item>
+        <item>Jika kita tidak menetapkan nilai baru pada nya, maka dia akan menggunakan nilai default nya</item>
+        <item>
+"    void myFunction(string nama = \"Sasmita\") {
+        cout &lt;&lt; \"Nama Saya adalah : \" &lt;&lt; nama &lt;&lt; endl;
+    }
+
+    int main() {
+        myFunction();
+        myFunction(\"Smith\");
+    }
+    /*
+        Nama Saya adalah : Sasmita
+        Nama Saya adalah : Smith */"
+        </item>
+        <item>Perhatikan bahwa kita tidak menetapkan nilai untuk parameter di pemanggilan fungsi yang pertama</item>
+        <item>Karena tidak ada nilai baru yang ditetapkan, dia akan menggunakan nilai default yang sudah ditetapkan di parameter</item>
+    </string-array>
+    <!--Overloading-->
+    <string-array name="Step3CPPsub5">
+        <item>Memilih nama untuk fungsi terkadang dapat membuat seorang developer dilema</item>
+        <item>Ini terlihat hal yang sederhana namun jika kode kita panjang, kita harus bisa membuat nama fungsi yang mudah diingat, spesifik dan tidak bertabrakan dengan yang lain</item>
+        <item>Namun dalam C++ Kamu bisa membuat 2 fungsi dengan nama yang sama, dengan syarat dia memiliki tipe data yang berbeda pada bagian parameter nya</item>
+        <item>
+"    void myFunction(string nama) {
+        cout &lt;&lt; \"Nama Saya adalah : \" &lt;&lt; nama &lt;&lt; endl;
+    }
+
+    void myFunction(int usia) {
+        cout &lt;&lt; \"Usia Saya adalah : \" &lt;&lt; usia &lt;&lt; endl;
+    }"
+        </item>
+        <item>Selalu ada karateristik pembeda diantara kedua nya, jika Kamu menggunakan kode yang sama pada fungsi yang baru, maka tidak ada guna nya membuat fungsi tersebut</item>
+        <item>itu hanya akan memberikan error pada kode mu</item>
+        <item>Pastikan parameter diantara kedua nya menggunakan tipe data yang berbeda.</item>
+        <item>Maksud berbeda disini bukan berarti setelah Kamu menggunakan tipe data string di fungsi sebelumnya, Kamu tidak bisa menggunakan tipe data string juga di fungsi lain nya</item>
+        <item>
+"    void myFunction(string nama) {
+        cout &lt;&lt; \"Nama Saya adalah : \" &lt;&lt; nama &lt;&lt; endl;
+    }
+
+    void myFunction(string nama, int usia) {
+        cout &lt;&lt; \"Usia Saya adalah : \" &lt;&lt; nama &lt;&lt; endl;
+    }"
+        </item>
+        <item>Kita masih dapat menggunakan tipe data string pada myFunction() ke dua, dan pembeda nya adalah kita menambahkan tipe data int disana</item>
+        <item>Jadi tetap ada karakteristik berbeda diantara kedua nya</item>
+    </string-array>
+    <!--Recursion-->
+    <string-array name="Step3CPPsub6">
+        <item>Recursive function (rekursi fungsi) adalah saat dimana sebuah fungsi memanggil diri nya sendiri</item>
+        <item>dan saat dia memanggil diri nya sendiri, kita harus membuat suatu kondisi untuk membuat nya berhenti.</item>
+        <item>
+"    void test(int number) {
+        cout &lt;&lt; number;
+        number--;
+        test(number);
+    }
+
+    int main() {
+        test(5);
+    }"
+        </item>
+        <item>Kode diatas akan mencetak angka 5 dan terus mengurangi nya sebesar 1, kemudian mencetak nya. Program itu akan berjalan infinity (selamanya).</item>
+        <item>Kamu bisa menghentikan proses nya dengan menekan ctrl + C di terminal</item>
+        <item>Sekarang mari kita membuat suatu kondisi untuk menghentikan nya</item>
+        <item>
+"    void test(int number) {
+        if (number == 1) {
+            cout &lt;&lt; number;
+        } else {
+            cout &lt;&lt; number;
+            number--;
+            test(number);
+        }
+    }
+    // 54321"
+        </item>
+        <item>Sekarang saat kita memanggil fungsi test, dia akan memeriksa apakah nilai nya 1. Jika ya maka dia hanya akan mencetak angka nya kemudian selesai</item>
+        <item>Jika tidak, dia akan mengurangi sebesar 1 kemudian melakukan recursion (memanggil dirinya sendiri)</item>
+        <item>Perhatikan bahwa nilai number yang digunakan saat recursion bukan lagi nilai yang ditetapkan di fungsi main, melainkan menggunakan nilai yang telah dimodifikasi di fungsi itu sendiri</item>
+        <item>Sekarang Kamu sudah paham cara penggunaan recusion, teruslah belajar dan bermain dengan kode!</item>
+    </string-array>
+</resources>

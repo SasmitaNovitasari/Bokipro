@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    step 1-->
+    <string-array name="Step1HTMLsub1">
+        <item>Apakah Kamu masih mengira bahwa HTML adalah bahasa pemrograman? Jika ya, maka Kamu sudah salah besar!</item>
+        <item>Pertama kenali dulu kepanjangan dari HTML (Hyper Text Markup Language)</item>
+        <item>Dari kepanjangan nya kita tahu bahwa HTML adalah Markup Language. Disebut markup Language karena dia menggunakan tag</item>
+        <item>Dalam HTML akan ada tag pembuka dan tag penutup</item>
+        <item>
+"    &lt;html> ... &lt;/html>"
+        </item>
+        <item>Penutup digunakan untuk menandakan format yang kita gunakan harus berhenti sampai mana.</item>
+        <item>Saat HTML pertama kali rilis pada tahun 1991, dia hanya memiliki 18 tags dan tentu nya sekarang semakin bertambah.</item>
+        <item>Lalu apa bedanya HTML dengan bahasa pemrograman lainya?</item>
+        <item>HTML tidak memiliki alur logika, dia sepenuhnya digunakan untuk men desain tampilan depan (front) yang akan ditunjukan kepada user.</item>
+        <item>Jika Kamu berpengalaman dalam beberapa bahasa pemrograman lain, maka Kamu akan melihat bahwa HTML dan bahasa pemrograman lain sangat berbeda</item>
+        <item>Karena itu HTML termasuk dalam kategori bahasa yang mudah dimengerti. Bahkan Kamu tidak perlu menggunakan compiler apapun untuk menjalankan HTML</item>
+        <item>Cukup simpan file ber ekstensi .html dan buka menggunakan browser kesayangan mu, dia akan menampilkan HTML mu dengan sangat baik</item>
+        <item>Selamat! Kamu akan segera mendalami HTML. Teruslah belajar!</item>
+    </string-array>
+
+    <string-array name="Step1HTMLsub2">
+        <item>HTML terus berkembang dan sudah ada beberapa versi yang muncul, dan versi terbaru nya adalah HTML5.</item>
+        <item>Ada juga versi 1.0 yang merupakan versi dari rilis pertama</item>
+        <item>Berapapun nomor versi nya, mereka masih tetap menggunakan format penulisan yang sama. Meskipun akan ada beberapa fitur yang ditambah atau dirubah</item>
+        <item>Karena itu kita akan mempelajari dasar HTML yang bisa juga digunakan di HTML5</item>
+        <item>Sejatinya fitur dan kelebihan HTML5 akan lebih mumpuni jika digunakan bersamaan dengan CSS dan Javascript</item>
+        <item>Karena HTML seperti sebuah tulang, javascript seperti sendi, otak dan otot, lalu CSS seperti baju untuk memperindah penampilan.</item>
+    </string-array>
+
+    <string-array name="Step1HTMLsub3">
+        <item>Sekarang kita akan mempelajari struktur dasar dalam HTML</item>
+        <item>
+"    &lt;html>
+        &lt;head>
+            &lt;title>HTML Pertamaku&lt;/title>
+        &lt;/head>
+
+        &lt;body>
+            Ini baris text
+        &lt;/body>
+    &lt;/html>"
+        </item>
+        <item>Bagian utama adalah tag &lt;html> ... &lt;/html>. Dia bekerja seperti pembungkus, semua kode HTML mu harus berada didalam nya</item>
+        <item>Tag head berisi semua elemen yang membantu membuat halaman HTML berfungsi. Terutama saat Kamu menggunakan CSS, ini akan dipelajari di masa mendatang.</item>
+        <item>Tag &lt;title> menunjukan pesan apa yang harus ditampilkan di judul tab pada browser</item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html1.png</item>
+        <item>Tag body menunjukan konten web kita akan diatur disana. Semua hal seperti text, gambar, link, daftar, paragraf dan masih banyak lagi.</item>
+        <item>tag body inilah yang akan ditampilkan kepada user, karena itu buatlah antarmuka semenarik mungkin.</item>
+    </string-array>
+
+
+    <!--    step 2-->
+    <string-array name="Step2HTMLsub1">
+        <item>Dalam HTML ada beberapa tag judul (headings) yang sudah ada secara default. Mereka adalah &lt;h1> &lt;h2> &lt;h3> &lt;h4> &lt;h5> &lt;h6></item>
+        <item>
+"    &lt;body>
+        &lt;h1>Ini judul headings 1&lt;/h1>
+        &lt;h2>Ini judul headings 2&lt;/h2>
+        &lt;h3>Ini judul headings 3&lt;/h3>
+        &lt;h4>Ini judul headings 4&lt;/h4>
+        &lt;h5>Ini judul headings 5&lt;/h5>
+        &lt;h6>Ini judul headings 6&lt;/h6>
+    &lt;/body>"
+        </item>
+        <item>Semakin besar angka nya maka judul nya akan semakin kecil. Menggunakan tag ini akan otomatis menebalkan judul Kamu</item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html2.png</item>
+        <item>Sangat tidak direkomendasikan menggunakan headings untuk text biasa atau hanya untuk menebalkan suatu text</item>
+        <item>Ini karena mesin pencari menggunakan judul (headings) untuk meng index struktur dan konten website.</item>
+        <item>Jadi pastikan Kamu menggunakan tags di HTML sesuai fungsi nya</item>
+    </string-array>
+
+    <string-array name="Step2HTMLsub2">
+        <item>Kamu juga bisa membuat garis horizontal (horizontal line) menggunakan tag &lt;hr></item>
+        <item>
+"    &lt;body>
+        &lt;h1>Ini judul headings 1&lt;/h1>
+        &lt;hr>
+        &lt;p>Ini adalah paragraf 1&lt;/p>
+        &lt;p>Ini adalah paragraf 2&lt;/p>
+        &lt;p>Ini adalah &lt;br> paragraf 3&lt;/p>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html1.png</item>
+        <item>Sangat mudah bukan? Bahkan tag dalam HTML sangat mudah dibaca manusia karena umumnya dia menggunakan singkatan dari nama asli</item>
+    </string-array>
+
+    <string-array name="Step2HTMLsub3">
+        <item>Dalam contoh sebelumnya mungkin Kamu melihat tag &lt;p> dan juga &lt;br/> yang belum kita bahas. Mari kita lihat ulang contoh dan kode nya</item>
+        <item>
+"    &lt;body>
+        &lt;h1>Ini judul headings 1&lt;/h1>
+        &lt;hr>
+        &lt;p>Ini adalah paragraf 1&lt;/p>
+        &lt;p>Ini adalah paragraf 2&lt;/p>
+        &lt;p>Ini adalah &lt;br/> paragraf 3&lt;/p>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html1.png</item>
+        <item>Tag &lt;p> mengartikan paragraf, gunakan ini untuk mengapit text atau paragraf yang harus ditunjukan kepada user. Kamu bisa membuat paragraf sebanyak yang dibutuhkan</item>
+        <item>Dan tag &lt;br/> digunakan untuk enter (mengganti baris) text sebanyak 1 baris. Perhatikan bahwa &lt;br/> tidak ada tag penutup nya.</item>
+    </string-array>
+
+    <string-array name="Step2HTMLsub4">
+        <item>Sekarang kita akan belajar penulisan komentar pada HTML</item>
+        <item>Komentar ditulis namun tidak untuk ditampilkan kepada user, melainkan hanya untuk referensi dan pengingat untuk diri sendiri atau developer lain</item>
+        <item>Ini seperti meninggalkan pesan singkat pada kode kita</item>
+        <item>
+"    &lt;!-- Disini komentar mu -->"
+        </item>
+        <item>Komentar akan sangat berguna jika kode mu sangat panjang atau terlihat rumit</item>
+        <item>Penulisan komentar diatas juga bisa digunakan untuk multi line (banyak baris)</item>
+        <item>Cukup letakan tanda &lt;!-- di awal kalimat dan --> di akhir kalimat (akhir baris)</item>
+        <item>
+"    &lt;!-- ini contoh
+    komentar multi line -->"
+        </item>
+        <item>Kamu bisa meletakan komentar dimanapun dan sebanyak apapun</item>
+        <item>Tapi ingat! Komentar dapat menambah ukuran file mu</item>
+    </string-array>
+
+
+
+    <!--    step 3-->
+    <string-array name="Step3HTMLsub1">
+        <item>Text formating digunakan untuk meberikan style atau gaya kepada text kita</item>
+        <item>Tap untuk melihat contoh nya!</item>
+        <item>
+"    &lt;body>
+        &lt;p>Ini teks biasa&lt;/p>
+        &lt;p>&lt;b>Ini teks tebal (bold)&lt;/b>&lt;/p>
+        &lt;p>&lt;i>Ini teks miring (italic)&lt;/i>&lt;/p>
+        &lt;p>&lt;big>Ini teks besar (big)&lt;/big>&lt;/p>
+        &lt;p>&lt;small>Ini teks kecil (small)&lt;/small>&lt;/p>
+        &lt;p>&lt;strong>Ini teks strong&lt;/strong>&lt;/p>
+        &lt;p>Ini &lt;sub>subscripted teks&lt;/sub>&lt;/p>
+        &lt;p>Ini &lt;sup>supercripted teks&lt;/sup>&lt;/p>
+        &lt;p>&lt;ins>Ini inserted teks (garis bawah)&lt;/ins>&lt;/p>
+        &lt;p>&lt;del>Ini deleted teks&lt;/del>&lt;/p>
+    &lt;/body>"
+        </item>
+        <item>Kamu menyedikan gambar sebagai hasil dari kode diatas. Ayo tap lagi!</item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html4.png</item>
+        <item>Sangat mudah bukan? Teruslah belajar dan bermain main dengan tag HTML!</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub2">
+        <item>Attribute berguna untuk memberikan informasi tambahan kepada suatu tag, ini juga dapat memodifikasi tag tersebut</item>
+        <item>nama-attribute=\"nilai\"</item>
+        <item>Ini seperti jika Kamu memiliki text di microsoft word kemudian menebalkan nya (bold), maka attribute nya adalah bold</item>
+        <item>Attribute pada HTML ditulis di tag pembuka</item>
+        <item>
+"    &lt;body>
+        &lt;h1 align=\"center\">Ini judul&lt;/h1>
+        &lt;p align=\"center\">test&lt;/p>
+    &lt;/body>"
+        </item>
+        <item>Ini akan membuat teks menjadi rata tengah, kau juga bisa menggunakan left dan right</item>
+        <item>align adalah nama attribute nya dan apapun yang berada di antara tanda kutip adalah nilai nya.</item>
+        <item>Kamu juga bisa menggunakan attribute untuk tag body yang akan berlaku untuk semua badan HTML</item>
+        <item>Ini akan berguna jika Kamu ingin semua teks mu rata tengah tanpa harus menuliskan attribute nya satu persatu ke setiap tag paragraf atau headings</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub3">
+        <item>Di materi sebelum nya kita telah mempelajari permformatan teks, sekarang kita akan mempelajari tentang tag &lt;span></item>
+        <item>&lt;span> juga digunakan untuk memformat teks</item>
+        <item>
+"    &lt;body>
+        &lt;p>
+            ini contoh &lt;span style=\"color:red;\">span&lt;/span> dalam HTML
+        &lt;/p>
+    &lt;/body>"
+        </item>
+        <item>Bagian teks \"span\" akan berwarna merah karena dia diapin itu tag &lt;span> yang memiliki style warna merah</item>
+        <item>Attribute dalam tag &lt;span> tidak hanya terbatas pada itu saja</item>
+        <item>
+"    &lt;body>
+        &lt;p>
+            ini contoh &lt;span style=\"color:red; background-color: darkgreen;\">span&lt;/span> dalam HTML
+        &lt;/p>
+    &lt;/body>"
+        </item>
+        <item>Lihatlah bahwa setiap style diakhiri dengan tanda semicolon (titik koma) dan diikuti style lain nya.</item>
+        <item>Kamu juga bisa menambahkan nilai pada attribute style sebanyak yang Kamu butuhkan. Jangan lupa pisahkan mereka dengan tanda ; (semicolon)</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub4">
+        <item>Dalam HTMl Kamu juga bisa meletakan gambar. Cukup gunakan tag img tanpa pembuka maupun penutup</item>
+        <item>
+"    &lt;img src=\"image.jpg\" />"
+        </item>
+        <item>src digunakan untuk mengidentifikasi dimana gambar nya. Bahkan Kamu juga bisa menggunakan URL</item>
+        <item>Jika Kamu menyimpan image.jpg di folder gambar maka gunakan contoh seperti ini</item>
+        <item>
+"    &lt;img src=\"gambar/image.jpg\" />"
+        </item>
+        <item>img bisa dirubah menggunakan attribute, seperti width dan height</item>
+        <item>
+"    &lt;img src=\"gambar/image.jpg\" width=\"10%\" height=\"10%\" />"
+        </item>
+        <item>Untuk satuan ukuran nya Kamu juga bisa menggunakan pixels (px)</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub5">
+        <item>Dalam HTML Kamu bisa membuat daftar, dan ada dua cara untuk melakukan nya</item>
+        <item>Ordered List (daftar terhitung), ini seperti daftar pada umumnya yang menggunakan angka seperti 1 2 3 4 dsb</item>
+        <item>
+"    &lt;body>
+        &lt;ol>
+            &lt;li>item satu&lt;/li>
+            &lt;li>item dua&lt;/li>
+            &lt;li>item tiga&lt;/li>
+        &lt;/ol>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html5.png</item>
+        <item>Perhatikan bahwa &lt;li> digunakan untuk setiap item nya dan semua tag &lt;li> dibungkus dalam tag &lt;ol> yang berarti ordered list</item>
+        <item>Unordered List (daftar tidak terhitung), ini tidak menggunakan angka sebagai acuan item nya, melainkan seperti bulatan hitam</item>
+        <item>
+"    &lt;body>
+        &lt;ul>
+            &lt;li>item satu&lt;/li>
+            &lt;li>item dua&lt;/li>
+            &lt;li>item tiga&lt;/li>
+        &lt;/ul>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html6.png</item>
+        <item>Contoh diatas juga menggunakan tag &lt;li> untuk setiap item nya dan dia dibungkus ke dalam tag &lt;ul> yang berarti unordered list</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub6">
+        <item>Sekarang kita akan belajar membuat tabel pada body HTML kita</item>
+        <item>tag &lt;table> digunakan untuk membuat table, tap untuk melihat contoh nya!</item>
+        <item>
+"    &lt;body>
+        &lt;table border=\"2\">
+            &lt;tr align=\"center\">
+                &lt;th>No&lt;/th>
+                &lt;th>Nama&lt;/th>
+                &lt;th>Absen&lt;/th>
+            &lt;/tr>
+            &lt;tr align=\"center\">
+                &lt;td>1&lt;/td>
+                &lt;td>Sasmita&lt;/td>
+                &lt;td>20&lt;/td>
+            &lt;/tr>
+            &lt;tr align=\"right\">
+                &lt;td>2&lt;/td>
+                &lt;td colspan=\"2\">Smith&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>3&lt;/td>
+                &lt;td>John&lt;/td>
+                &lt;td bgcolor=\"blue\">15&lt;/td>
+            &lt;/tr>
+        &lt;/table>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html7.png</item>
+        <item>Sekarang akan kita bahas kode nya satu persatu</item>
+        <item>&lt;tr> (table row) digunakan untuk membuat baris. Artinya setiap baris harus berada didalam tag ini.</item>
+        <item>&lt;td> (table data) digunakan untuk membuat sel (setiap kotak dalam baris). Karena itu dia dibungkus menggunakan tag &lt;tr></item>
+        <item>&lt;th> (table header) digunakan untuk membuat header yang umumnya otomatis menebalkan teks.</item>
+        <item>Untuk attribute tambahan yaitu border untuk menentukan tebal garis pada tabel.</item>
+        <item>bgcolor yang digunakan untuk mengubah warna background</item>
+        <item>colspan untuk menggabungkan beberapa kolom ke samping</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub7">
+        <item>Pasti Kamu pernah melihat text pada browser yang berwarna dan umumnya digaris bawahi. Dan saat ditekan dia akan membawa kita pada url lain</item>
+        <item>Dia dinamakan tautan dan pasti itu sudah tidak asing lagi untukmu</item>
+        <item>tag &lt;a> digunakan untuk membuat tautan dalam html</item>
+        <item>
+"    &lt;body>
+        &lt;a href=\"https://www.google.com\">Klik Disini&lt;/a>
+    &lt;/body>"
+        </item>
+        <item>Sekarang akan ada teks \"Klik Disini\" yang berwarna di website mu, dan saat ditekan dia akan mengarahkan untuk membuka link google</item>
+        <item>Artinya Kamu sudah tahu bahwa attribute href digunakan untuk menentukan url (alamat nya).</item>
+        <item>
+"    &lt;a href=\"https://www.google.com\" target=\"blank\">Klik Disini&lt;/a>"
+        </item>
+        <item>Attribute target dengan nilai blank digunakan agar saat user mengklik teks tersebut, tautan akan dibuka di tab baru</item>
+        <item>Ini akan memudahkan user kembali lagi ke website kita menggunakan fitur tab pada browser tanpa meninggalkan halaman dari tautan tadi</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub8">
+        <item>Sekarang kita akan mempelajari tag &lt;div></item>
+        <item>&lt;div> seperti wadah (container) yang bisa membungkus banyak elemen - elemen lain dalam HTML</item>
+        <item>Dia mirip seperti tag &lt;html>, perbedaan nya adalah kita hanya dapat menggunakan tag &lt;html> sebanyak 1 kali, sedangkan tag &lt;div> bisa digunakan berkali kali</item>
+        <item>
+"    &lt;body style=\"color: white;\">
+        &lt;div style=\"padding: 20px; margin: 10px; text-align: center; background-color: blue; border-radius: 10px;\">
+            &lt;h1>Ini adalah headings&lt;/h1>
+            &lt;hr width=\"70%\">
+        &lt;/div>
+
+        &lt;div style=\"padding: 20px; margin: 10px; text-align: center; background-color: green; border-radius: 10px;\">
+            &lt;p>Ini paragraf 1&lt;/p>
+            &lt;p>Ini paragraf 2&lt;/p>
+        &lt;/div>
+
+        &lt;div style=\"padding: 20px; margin: 10px; text-align: center; background-color: cornflowerblue; border-radius: 10px;\">
+            &lt;p>Ini paragraf 3&lt;/p>
+        &lt;/div>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html8.png</item>
+        <item>Perhatikan bahwa setiap blok dari tag &lt;div> menggabungkan elemen didalam nya dan membuat background nya sendiri</item>
+        <item>&lt;div> dapat digunakan untuk mengatur style dari suatu blok kontent dan tentu saja attribute nya tidak hanya seperti yang ada dalam contoh</item>
+        <item>Masih banyak attribute lain dalam HTML yang bisa Kamu explore</item>
+        <item>Sekarang Kamu bisa membuat banyak blok kontent sesuai kebutuhanmu</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub9">
+        <item>Dalam materi sebelum nya sering kali kita menggunakan attribute yang membutuhkan nilai warna</item>
+        <item>dan kita menggunakan nilai seperti red, blue, green dll</item>
+        <item>Lalu bagaimana jika kita ingin menggunakan warna yang lebih spesifik?</item>
+        <item>Kita bisa menggunakan warna RGB untuk nilai suatu attribute</item>
+        <item>
+"    style=\"color: rgb(255, 255, 255)\""
+        </item>
+        <item>Contoh diatas adalah penggunakan RGB untuk warna putih</item>
+        <item>Selain RGB Kamu juga bisa menggunakan warna hex yang diawali dengan tanda # diikuti dengan 6 digit kode warna</item>
+        <item>
+"    style=\"color: #ffffff;\""
+        </item>
+        <item>Sekarang Kamu bisa menggunakan warna pilihanmu dengan lebih spesifik</item>
+    </string-array>
+</resources>

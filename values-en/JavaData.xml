@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    basik konstep step1-->
+    <string-array name="Step1Sub1">
+        <item>Java is a high-level programming language designed in 1990 by Sun Microsoft Systems</item>
+        <item>Java is powerful, portable and dynamic to meet various types of applications. More than 3 billion devices already use and support Java</item>
+        <item>Computers actually have complex languages, but many developers work together to create languages that are easier to understand, and Java is one of the easiest programming languages to understand.</item>
+        <item>When you write Java code, the computer still doesn\'t understand it, which is why compilers exist. He will change our Java code so that it can be understood by the computer</item>
+        <item>We also need an editor or tool to write code that can show us which parts of writing went wrong.</item>
+        <item>And most importantly, we must be able to find bugs or errors from our program. This activity is called debugging.</item>
+        <item>This means that we need an editor, compiler and debugger for our coding convenience.</item>
+        <item>We can get all that in one application, it is called an IDE (Integrated Development and Environment). IDE is already equipped with many tools that can help us, there are lots of IDEs for Java, you can search for any according to your taste</item>
+        <item>Or if you don\'t have adequate facilities, you can use an online compiler for learning. They are very many, choose your own on the internet without downloading any tools.</item>
+        <item>But as technology advances, you can also run Java on Android, some developers have made compilers that you can download for free.</item>
+        <item>Now there is no reason for you to be one of those people who don\'t have programming knowledge</item>
+    </string-array>
+
+    <string-array name="Step1Sub2">
+        <item>Now we will examine the legendary simple program. Especially if it\'s not a hello world program! </item>
+        <item>
+"    class MyClass {
+        public static void main(String[] args) {
+            //  Your code here
+            System.out.println(\"Hello world!\");
+        }
+    }"
+        </item>
+        <item>Now let\'s dissect the code one by one</item>
+        <item>
+"    class MyClass {
+        ...
+    }"
+        </item>
+        <item>MyClass is the name of your class, its name is taken from the name of the java file that you created</item>
+        <item>In Java you can create multiple classes to break down your code to make it easier to maintain. </item>
+        <item>No need to be afraid, we will learn classes in the future</item>
+        <item>
+"    public static void main(String[] args) {
+        ...
+    }"
+        </item>
+        <item>Every Java program must have a class as well as a main method or main method. The above code is our main method</item>
+        <item>public means who can access it. These are called access modifiers which we will learn about in the future. </item>
+        <item>main indicates this is your main method, all your programs must end here for it to be executed </item>
+        <item>void means it returns nothing or is empty. We will discuss this in more detail in the next lesson</item>
+        <item>
+"    System.out.println(\"Hello world!\");"
+        </item>
+        <item>We will discuss the code above in the next material for a more complete explanation.</item>
+    </string-array>
+
+    <string-array name="Step1Sub3">
+        <item>From the previous hello world lesson, we haven\'t discussed more about printing text to the screen</item>
+        <item>It serves to provide a display or text hint to the user.</item>
+        <item>There are 2 ways to print text to the screen, using println() or print()</item>
+        <item>
+"    System.out.println();
+    System.out.print();"
+        </item>
+        <item>Both can be used to print something to the screen, this only applies to those of you running Java projects in terminal or CMD windows.</item>
+        <item>Now we will see the use of the first one</item>
+        <item>
+"    System.out.println(\"this example\");
+    System.out.println(\"print to screen\");"
+        </item>
+        <item>It will print the text and then automatically replace the line (enter). Meanwhile, to enter manually you have to add \\n as an enter sign.</item>
+        <item>Tap again to see the output of the code above</item>
+        <item>
+"    this example
+    print to screen"
+        </item>
+        <item>Very simple isn\'t it? Now we will learn how to use the second one</item>
+        <item>
+"    System.out.print(\"this example\");
+    System.out.print(\"print to screen\\n\");
+    System.out.print(\"this is new line\"); "
+        </item>
+        <item>print() will not automatically replace the line, so you will have to replace the line manually.</item>
+        <item>
+"    this exampleprint to screen
+    this is new line"
+        </item>
+        <item>Note that the exampleprint output is not spaced because at the beginning of the word "print" or at the end of the word "example" there is no space.</item>
+        <item>Now you understand how to print text to the terminal. Play around with the code and try to write your name there!</item>
+    </string-array>
+
+    <string-array name="Step1Sub4">
+        <item>From the previous hello world program, you may have seen text that begins with two slashes</item>
+        <item>He is called by commentary. In Java there are 2 types of comments, namely 1 line comments (single line) and multiple line comments (multi line).</item>
+        <item>
+"    // This is a single line comment
+    // This is a one line comment too
+    /*
+        This is a multi line comment
+        You can add as much as you want
+    */"
+        </item>
+        <item>Comments will not be executed by the compiler, they will be skipped and have no effect in your program. </item>
+        <item>It looks meaningless but it is very important if we have long lines of code and complicated algorithms</item>
+        <item>You can put comments wherever and as much as you want to make it easier for you to remember the flow of the program </item>
+        <item>It can also make it easier for other programmers to read your code </item>
+        <item>Remember, adding too many comments will also increase the size of a file </item>
+    </string-array>
+
+    <string-array name="Step1Sub5">
+        <item>Variables work like containers, they will hold whatever you put in there </item>
+        <item>The difference is, Java has a special container for each type of content you enter </item>
+        <item>This difference is called the data type </item>
+        <item>If you have a box-shaped container, then in Java, something or its contents must also be square. </item>
+        <item>First you have to know the types of data types in Java and what types can be accommodated by them </item>
+        <item>
+"Integer (int) : Integer number
+Floating (float) : decimal number
+Boolean (boolean) : true or false
+Char (char) : Character. Remember, holding a character means only 1 letter
+String : A collection of chars. This means you can write long sentences, because the principle of String is a collection of chars put together "
+            "</item>
+        <item>To write a variable you can just prepare the container or fill the container too </item>
+        <item>Suppose you have a circular container, but you just want to prepare the container and fill it later. </item>
+        <item>
+"    int number;
+    String words;
+    boolean condition;
+    float decimal;"
+        </item>
+        <item>Don\'t be one of the thousands of people who forget the semicolon at the end of the variable. </item>
+        <item>If you forget it, don\'t worry, the compiler will return an error and leave a message there. </item>
+        <item>Now we will learn to assign values to variables. Sometimes this is also known as initialization. </item>
+        <item>
+"    int number = 15;
+    String words = \"You can fill in the sentences too\";
+    boolean condition = true; // Remember, it can only be true or false
+    float decimal = 8.0;"
+        </item>
+        <item>Variable values can also be changed as long as they are not set as final</item>
+        <item>
+"    class MyClass {
+        public static void main(String[] args) {
+            int number = 15;
+            System.out.println(number); // Output: 15
+            number = 20;
+            System.out.println(number); // Output: 20
+        }
+    }"
+        </item>
+        <item>To make a variable immutable, set it to final. </item>
+        <item>
+"    final int number = 20;"
+        </item>
+        <item>Changing it forcibly may cause an error </item>
+        <item>This can also be used for other data types, just add final in front of the data type name. </item>
+    </string-array>
+
+    <string-array name="Step1Sub6">
+        <item>Saat Kamu menjalankan program Java di terminal, terkadang Kamu membutuhkan input user. Untuk mendapatkan nya Kamu bisa menggunakan class scanner. </item>
+        <item>
+"    import java.util.Scanner;"
+        </item>
+        <item>Untuk menggunakan scanner, Kamu perlu membuat instansi dari objek tersebut. </item>
+        <item>
+"    Scanner scanner = new Scanner(System.in);"
+        </item>
+        <item>Tidak perlu khawatir jika terlihat membingungkan, ini adalah langkah awal yang bagus untuk mu mengenal classes di Java. </item>
+        <item>Untuk mengambil input, pastikan Kamu menggunakan input untuk tipe data yang sama </item>
+        <item>
+"byte: nextByte()
+short: nextShort()
+int: nextInt()
+long: nextLong()
+float: nextFloat()
+double: nextDouble()
+line: readLine()
+word: next()"
+        </item>
+        <item>Now let\'s put it all together. </item>
+        <item>
+"    import java.util.Scanner;
+
+    class MyClass {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            String name = scanner.next();
+            System.out.println(name); // Output name according to user input
+        }
+    }"
+        </item>
+    </string-array>
+
+    <string-array name="Step1Sub7">
+        <item>There are some operator primitives that you may already be familiar with as a child. Add(+), subtract(-), divide(/), multiplication(*), modulo(%) </item>
+        <item>There may be something new, namely modulo. Modulo works much like division, the difference is that modulo returns the remainder, whereas division returns the result.</item>
+        <item>11/9 = 1 while 10%9=2 because after dividing by 9, it still leaves 2 or often known as 1,2 in division. Modulo only takes the remainder, which is 2. </item>
+        <item>While division will return 1 if it is stored in an integer variable, and will return 1,2 if it is stored in a float variable</item>
+        <item>Easy isn\'t it, programs are just about writing (syntax) that changes slightly so the computer understands what we mean</item>
+    </string-array>
+
+    <string-array name="Step1Sub8">
+        <item>Do you remember? Basically a String contains a character set? therefore String is not included in the primitive operator </item>
+        <item>However, Strings can also be summed with some conditions </item>
+        <item>
+"    String firstName = \"Sasmita\";
+    String lastName = \"Developer\";
+    String result = firstName + lastName; // SasmitaDeveloper"
+        </item>
+        <item>Keep playing with the code and you\'ll get used to it </item>
+        <item>Try using an operator other than sum and see what happens</item>
+        <item>Reading all the material at the same time is bad practice</item>
+        <item>You should enjoy the process by continuing to train yourself</item>
+    </string-array>
+
+    <string-array name="Step1Sub9">
+        <item>As the name implies, increment is to increase a value, and decrement is to decrease a value.</item>
+        <item>If you want to increase a value in a variable, you can use increment instead of creating 2 different variables and then adding them manually</item>
+        <item>Java is made for our convenience! Tap to see examples</item>
+        <item>
+"    int x = x + 1 // increment
+    int x = x – 1 // decrement "
+        </item>
+        <item>It will increase the value in the variable x by 1 and store the latest value in the same variable, this also applies to the decrement</item>
+        <item>So you don\'t need to create a new variable to store the new value</item>
+        <item>You can change the number 1 there to any number you want</item>
+        <item>However, you can write it more simply if you only want to change the value by 1</item>
+        <item>
+"    x++ // increment
+    x-- // decrement"
+        </item>
+        <item>Now let\'s get acquainted with prefix and postfix</item>
+        <item>
+"    int x = 34;
+    System.out.println(x); // output 34
+    int y = ++x; // this is a prefix
+    System.out.println(y); // output 35
+    System.out.println(x); // output 35"
+        </item>
+        <item>Prefix will change it\'s value first and then use the new value. Pay attention to the output before and after passing the prefix!</item>
+        <item>Postfix will use the old value then increment it, press continue to see the example!</item>
+        <item>
+"    int x = 34;
+    System.out.println(x); // output 34
+    int y = x++; // this is postfix
+    System.out.println(y); // output 34
+    System.out.println(x); // output 35"
+        </item>
+        <item>Pay close attention! Before passing postfix the value of x is still the same, after passing through postfix, the value of y uses the old value of x and keeps it, then x is increased by 1</item>
+        <item>This causes y to have the old value of 34, and x = 35 because it has been increased by 1</item>
+        <item>Next we will get to know the assignment operator combined with + and –</item>
+        <item>
+"    int x = 10;
+    int y = 5;
+    System.out.println(x); // 10
+    System.out.println(y); // 5
+    x += y; // x = x + y
+    y –= x; // y = y – x
+    System.out.println(x); // 15
+    System.out.println(y); // –5"
+        </item>
+        <item>Notice when the values of x and y change</item>
+        <item>Keep learning and playing with code!</item>
+    </string-array>
+
+
+    <!-- Repeat step2-->
+    <string-array name="Step2Sub1">
+        <item>if is used to compare something. Let\'s make a simple analogy for you</item>
+        <item>If the number 1 is true then the value is added by 10. Let\'s make a code for it! Press next to learn more</item>
+        <item>
+"    int value = 0;
+    booleanNumberOne = true;
+    if (numberOne == true) {
+        value += 10;
+    }"
+        </item>
+        <item>Pay attention to the == sign, it is used to say that the number 1 is true. If using if you must use 2 signs of =</item>
+        <item>You can also use less than (&lt;) or greater than (>). If you use this then the 2 things you have to compare is a calculated value, like an int or a float</item>
+        <item>Now what if numberOne is false? Let\'s see the code!</item>
+        <item>
+"    int value = 0;
+    booleanNumberOne = false;
+    if (numberOne == true) {
+        value += 10;
+    } else {
+        value –= 10;
+    }"
+        </item>
+        <item>Now else will be executed because numberOne is false and reduces the value by 10</item>
+        <item>else will only be executed if the condition in if does not match</item>
+    </string-array>
+
+    <string-array name="Step2Sub2">
+        <item>Sometimes we will need something like if inside if. Let\'s see the simple analogy first!</item>
+        <item>If numberOne is wrong, then see if the value is 0, if 0 it gives a "remedial" message, if not 0 gives a "learn again!" message. Meanwhile, if number One is correct then give the message "congratulations!"</item>
+        <item>
+"    int value = 0;
+    booleanNumberOne = false;
+    if (numberOne == false) {
+        if (value == 0) {
+            System.out.println(\"remedial\");
+        } else {
+            System.out.println(\"learn again!\");
+        }
+    } else {
+        System.out.println(\"congratulations!\");
+    }"
+        </item>
+        <item>else can also be used inside nested ifs as long as they are properly indented. Else should always be combined with if, whereas if is fine without else</item>
+        <item>You can create as many nested ifs as you want. Make sure your IDE or code editor is properly indented!</item>
+    </string-array>
+
+    <string-array name="Step2Sub3">
+        <item>Sometimes when using if you still have to add more logic without wanting to create nested ifs</item>
+        <item>For example you want to use the operator and (&amp;&amp;), or (||). Let\'s see the analogy</item>
+        <item>If his name is Anton and his ID is 1234 then allow login</item>
+        <item>
+"    String name = \"anton\";
+    int id = 1234;
+    if (name.equals(\"anton\") &amp;&amp; id == 1234) {
+        // login
+    }"
+        </item>
+        <item>Be careful when comparing Strings. Recall that String is not a primitive operator</item>
+        <item>That\'s why when comparing Strings, we can\'t use == but .equals()</item>
+        <item>When using &amp;&amp; both comparison conditions must be true. So name and id must match</item>
+        <item>Meanwhile when using ||, the if condition will be true if one of the comparisons is true</item>
+        <item>Assume the name comparison is correct but the id comparison is wrong, then the if will still be executed</item>
+        <item>
+"    String name = \"anton\";
+    int id = 1234;
+    if (name.equals(\"anton\") || id == 0000) {
+        // login
+    }"
+        </item>
+        <item>Now we will make a comparison using NOT(!)</item>
+        <item>
+"    int id = 1234;
+    if (!(id == 0000)) {
+        // This is executed
+    }"
+        </item>
+        <item>With a comparison enclosed in a !() sign means that it is the opposite</item>
+        <item>Or you can read it \"If id equal to 0000 is not correct, then...\"</item>
+        <item>That way we can read the !() sign with \"... not true\" </item>
+        <item>GREAT! You\'ve come this far, keep practicing</item>
+    </string-array>
+
+    <string-array name="Step2Sub4">
+        <item>else if works much like if, the difference is that it cannot stand alone, it must be combined with if</item>
+        <item>He looks like Else, doesn\'t he? Let\'s see the sample code</item>
+        <item>
+"    int id = 1234;
+    if (id == 1111) {
+        ....
+    } else if (id == 1234) {
+        // this is executed
+    } else if (id == 5678) {
+        ....
+    } else {
+        ...
+    }"
+        </item>
+        <item>If the id is 1234 it means the if condition is false, it will continue checking to else if and else if until it gets a true else if</item>
+        <item>But if all else if is also false then he will execute else as the last action</item>
+        <item>If there is no else there, then nothing should be executed</item>
+        <item>You can add as many else ifs as you need</item>
+    </string-array>
+
+    <string-array name="Step2Sub5">
+        <item>switch is very similar to if with else if, it will find which condition is true and execute it</item>
+        <item>
+"    int id = 1234;
+    switch(id) {
+        case 1111:
+            // do something
+            breaks;
+        case 1234:
+            // this will be executed
+            breaks;
+        case 0000:
+            // do something
+            breaks;
+        defaults:
+            // do something
+    }"
+        </item>
+        <item>Switch is much less coded if you have to compare a lot</item>
+        <item>Pay attention to the break sign that must be included in each case. Also pay attention to the indentation!</item>
+        <item>Case 0000 will not execute because the correct condition was found on it</item>
+        <item>If you try to write the same comparison, the editor will tell you to delete one</item>
+        <item>Also pay attention to the default section and the fact that there is no break there</item>
+        <item>Default will be executed if none of the conditions are true. This is similar to else when neither condition in the if nor else if is true</item>
+        <item>In addition to int, you can also make a case to search for String, just enclose text with double quotes</item>
+    </string-array>
+
+    <string-array name="Step2Sub6">
+        <item>While will run as long as the condition is true. If you remember again, when the if condition is true, it is only executed once</item>
+        <item>
+"    int x = 1;
+    while (x == 1) {
+        System.out.println(\"run!\"):
+    }"
+        </item>
+        <item>The program will print run forever because the condition is always true. Therefore we have to create a condition inside while to stop it</item>
+        <item>
+"    int x = 1;
+    while (x == 1) {
+        System.out.println(\"run!\"):
+        x = 0;
+    }"
+        </item>
+        <item>Now while only prints 1 run because after that x is changed to 0 and x == 1 is already a false condition</item>
+        <item>Let\'s code again for you. Press again to learn more!</item>
+        <item>
+"    int x = 6;
+    while (x &lt; 10) {
+        System.out.print(x):
+        x++;
+    }"
+        </item>
+        <item>Now he will print the number 6 7 8 9. How can the number 10 also be printed on the screen?</item>
+        <item>Use comparison &lt;= because it is something like “6 is less than or equal to 10”. This also applies to greater than (>=)</item>
+    </string-array>
+
+    <string-array name="Step2Sub7">
+        <item><b>do</b> will be executed regardless of the condition (true or false) 1 time then run while</item>
+        <item>
+"    int x = 1;
+     do {
+         System.out.println(x)
+     } while (x &lt; 0);
+     //output 1"
+         </item>
+        <item>Note that the while condition is false but do will still be executed once</item>
+        <item>Press again to see more</item>
+        <item>
+"    int x = 1;
+     do {
+         System.out.println(x)
+         x++;
+     } while (x &lt; 5);
+     /*
+     1
+     2
+     3
+     4
+     */"
+         </item>
+        <item>Note that when the while condition is true it will return to the top and execute do and so on until the while condition is false</item>
+        <item>This is useful if you want to take user input and stop asking for input until the user commands it</item>
+    </string-array>
+
+    <string-array name="Step2Sub8">
+        <item>For works similarly to while, it will execute as long as the condition is true</item>
+        <item>Usually for is used to print from a certain range to the desired</item>
+        <item>Press next to understand the for loop syntax</item>
+        <item>
+"    for (initialization; condition; increment/decrement) {
+        // do something
+    }"
+        </item>
+        <item>Tap again and see the sample code</item>
+        <item>
+"    for (int a = 1; a &lt;= 5; a++) {
+        System.out.println(a);
+    }
+    /*
+    1
+    2
+    3
+    4
+    5
+    */"
+        </item>
+        <item>For increments and decrements you can also use the syntax a+=2 and the program will print numbers in multiples of 2</item>
+        <item>
+"    for (int a = 1; a &lt;= 5; a+=2) {
+        System.out.println(a);
+    }
+    /*
+    1
+    3
+    5
+    */"
+        </item>
+        <item>So easy isn\'t it? Keep on learning!</item>
+    </string-array>
+
+
+    <!-- step3-->
+    <string-array name="Step3Sub1">
+        <item>Imagine you have to store multiple names in String variables</item>
+        <item>
+"    String name1 = "john";
+    String name2 = \"smith\";
+    String name3 = "jacob";"
+        </item>
+        <item>The code above is not wrong, but if the data name that you have to write is thousands you can use an array</item>
+        <item>You can store a lot of data in one variable without having to write it over and over again. With a note that all variables have the same data type.</item>
+        <item>
+"    String[] data = {\"john\", \"smith\", \"jacob\"};"
+        </item>
+        <item>Remember to use curly braces and a semicolon at the end.</item>
+        <item>To retrieve data from an array, use this syntax</item>
+        <item>
+"    &lt;datatype name>[&lt;index>];"
+        </item>
+        <item>Order or array index is no longer from 1, but from 0</item>
+        <item>
+"    String[] data = {\"john\", \"smith\", \"jacob\"};
+    System.out.println(data[0]); // john
+    System.out.println(data[1]); // smith
+    System.out.println(data[2]); // jacob"
+        </item>
+        <item>If you try to access data[3] then error <b>ArrayIndexOutOfBoundsException</b></item>
+        <item>It indicates that the index does not exist in the data because the highest index is only 2</item>
+        <item>Now you have learned to read an error</item>
+        <item>The compiler always leaves a message if your program won\'t run</item>
+    </string-array>
+
+    <string-array name="Step3Sub2">
+        <item>First get to know the English language of "improved for loop". It\'s called an enhanced for loop</item>
+        <item>He is also often nicknamed "for each"</item>
+        <item>for each is used to traverse array elements and minimize bugs</item>
+        <item>
+"    String[] data = {\"john\", \"smith\", \"jacob\"};
+    for (int x =0; x &lt; data.length; x++) {
+        System.out.println(data[x]);
+    }"
+        </item>
+        <item>He will print all the contents in the data array</item>
+        <item>Notice the for condition, we use length to get the length of the array. Here the length of the array will correspond to the calculation in mathematics, which is 3</item>
+        <item>Remember that starting from 0 is the index, not the length.</item>
+        <item>They are 2 different things. Index refers to where (the address is), while length refers to the size or amount of data</item>
+        <item>If you use a comparison of conditions &lt;= then 3 will be searched in the index while our highest index is only 2. This is when the ArrayIndexOutOfBoundsException error occurs</item>
+        <item>Writing the code was quite complete, especially if we want to take indexes with multiples of 2 etc.</item>
+        <item>Now let\'s see the for loop syntax is really improved</item>
+        <item>
+"    String[] data = {\"john\", \"smith\", \"jacob\"};
+    for(String t:data) {
+        System.out.println(t);
+    }"
+        </item>
+        <item>Now all the data in the array will be printed</item>
+        <item>Always pay attention to the data type used!</item>
+    </string-array>
+
+    <string-array name="Step3Sub3">
+        <item>In the previous material you already know about arrays, the arrays you are studying are 1-dimensional arrays</item>
+        <item>
+"    String[] array = { };"
+        </item>
+        <item>The number of dimensions of the array is indicated by the number of square brackets []</item>
+        <item>Now we will learn about multidimensional arrays</item>
+        <item>As an example, we will study 2-dimensional arrays. Then we will need 2 square brackets</item>
+        <item>
+"    int[][] dataArray = {{arr1}, {arr2}, {arr3}, {arr4}, ...};"
+        </item>
+        <item>Remember in the previous material that the element (data - data) that we accommodate directly contains the value of the specified data type</item>
+        <item>
+"    int[] var = {1, 2, 3};"
+        </item>
+        <item>Whereas the elements of the dataArray contain another array. This means that the 0th index of the dataArray is arr1 and so on.</item>
+        <item>While arr1 in dataArray still has its own index</item>
+        <item>
+"    int[] arr1 = {1, 2};"
+        </item>
+        <item>arr1 still has index 0 which contains 1 and at index 1 which contains 2</item>
+        <item>It\'s like an array within an array</item>
+        <item>Now let\'s create 2 integer arrays that hold different values.</item>
+        <item>
+"    int[] data1 = {1, 2};
+    int[] data2 = {3, 4, 5};"
+        </item>
+        <item>Now we will combine the two into a 2-dimensional array.</item>
+        <item>
+"    int[][] array = {{1, 2}, {3, 4, 5}};"
+        </item>
+        <item>Pay attention to the code above. We put array data1 and data2 but they are still separate</item>
+        <item>We put data1 at index 0 and data2 at index 1</item>
+        <item>
+"    int[][] arrayParent = { {data1} , {data2}, ... };"
+        </item>
+        <item>From the analogy above we can see that data1 and data2 are elements of the parent array</item>
+        <item>The elements of the Parentarray are not integer values, but an array containing integer elements.</item>
+        <item>If we break again, data1 still contains more elements</item>
+        <item>
+"    {1, 2}"
+        </item>
+        <item>Elements of data1 also have an index starting at 0.</item>
+        <item>So to access an int data from a two-dimensional array, we need 2 index</item>
+        <item>The first index for arrayIndux and the second index for the array that is the element of arrayIndux</item>
+        <item>
+"    int[][] array = {{1, 2}, {3, 4, 5}};
+    array[0][1]; // 2"
+        </item>
+        <item>Note that array[0].. refers to the array at index 0 which contains {1, 2}</item>
+        <item>And array..[1] refers to index 1 of the array in it. The array inside is {1, 2}, so the 1st index is 2</item>
+        <item>Keep in mind that array indexes always start at 0</item>
+        <item>You can create multiple dimensions in an array, but the more dimensions there are, the more difficult it will be to manage</item>
+    </string-array>
+
+
+    <!-- step4-->
+    <string-array name="Step4Sub1">
+        <item>We will get to know about OOP (Object Oriented Programming). In Indonesian he is known as PBO (Object Oriented Programming)</item>
+        <item>It\'s like breaking long code into multiple files or functions for reuse. Basically this is just to make it easier for a programmer.</item>
+        <item>Suppose there are 2 cars. Both are cars, but car A could be red and car B blue.</item>
+        <item>Then the behavior, car A can fly and car B can be in the sea. It can also be used as a Car class with color and behavior attributes (methods) according to the object</item>
+        <item>
+"    class MobilA {
+        String color = "blue";
+        public void A() {
+            // Fly
+        }
+    }
+
+    class MobilB {
+        String color = "blue";
+        public void B() {
+            // At sea
+        }
+    }"
+        </item>
+        <item>So they are the same thing, namely a car. But there is always a distinguishing characteristic between the two.</item>
+        <item>Either from his name, his attributes or his behavior</item>
+    </string-array>
+
+    //meotde
+    <string-array name="Step4Sub2">
+        <item>Methods can also be called functions. Now let\'s create an example of a simple method</item>
+        <item>
+"    static void MyFunction() {
+        System.out.println(\"Fly!\");
+    }"
+        </item>
+        <item>Now we have 1 MyFunction method which will print the word Fly. To use it just write the method name</item>
+        <item>
+"    MyFunction();"
+        </item>
+        <item>Pay attention to the brackets and semicolon, so you don\'t forget them.</item>
+        <item>The advantage of methods is that you can call them as many times as you want. This will make your code less expensive than having to write your code over and over again.</item>
+        <item>
+"    class MyClass {
+        static void MyFunction() {
+            System.out.println(\"Fly!\");
+        }
+        public static void main(String[] args) {
+            MyFunction();
+            MyFunction();
+        }
+    }"
+        </item>
+        <item>Do you remember the main method (main function) ? All your programs must end there for the compiler to execute</item>
+        <item>Therefore MyFunction(); must be written in function main</item>
+    </string-array>
+
+    // return type
+    <string-array name="Step4Sub3">
+        <item>Do you remember about void? He didn\'t return anything. You may wonder what he returned. Now let\'s find out</item>
+        <item>The return type is the same as the data type, but it\'s not limited to that, it can return many things</item>
+        <item>
+"    public class MyClass {
+
+        public static int age() {
+            int a = 20;
+            returns a;
+        }
+
+        public static void main(String[] args) {
+            System.out.println(age()); //output: 20
+        }
+    }"
+        </item>
+        <item>Pay attention to the age() method it no longer uses void, but int which means integer (integer)</item>
+        <item>We must use return as a sign that it returns something followed by what is returned. Provided that what is returned has the same type as specified</item>
+        <item>
+"    public static String name()"
+        </item>
+        <item>If it uses String then the returned data type must be String too</item>
+        <item>
+"    return "Sasmita";"
+        </item>
+        <item>You can also store \"Sasmita\" in a String variable and then return it the same way we return an integer in the age() method</item>
+        <item>Of course if you don\'t want to return anything, just use void.</item>
+    </string-array>
+
+    //object
+    <string-array name="Step4Sub4">
+        <item>To create objects in Java is very easy. Suppose we have a class Animal.java</item>
+        <item>
+"    public class Animal {
+        // This is the constructor
+        public Animal() {
+            System.out.println(\"hi\");
+        }
+    }"
+        </item>
+        <item>Look at the public Animal() section. Java calls it constructor, the general characteristic is that the function name is the same as the class name.</item>
+        The <item>Constructor is executed every time an object of that class is created. You can also leave the constructor empty or choose not to create it</item>
+        <item>Now we want to create an Animal object in our main class which is MyClass</item>
+        <item>
+"    public class MyClass {
+        public static void main(String[] args) {
+            Animal test = new Animal();
+            // Output "hi"
+        }
+    }"
+        </item>
+        <item>From the code above we can see the syntax when we want to create an object</item>
+        <item>
+"    &lt;classname>FreeObjectName = new &lt;classname>"
+        </item>
+        <item>Now we have a test object of class Animal. Let\'s try to add a new function in Animal.java and then access it via MyClass.java</item>
+        <item>
+"    public class Animal {
+
+        // This method
+        public void fish() {
+            System.out.println(\"This is a fish\");
+        }
+        // This is the constructor
+        public Animal() {
+            System.out.println(\"hi\");
+        }
+    }"
+        </item>
+        <item>Now we can use the fish function too. Just add a sign (.) in the class object followed by the function name</item>
+        <item>
+"    public class MyClass {
+        public static void main(String[] args) {
+            Animal test = new Animal();
+            test.fish();
+        }
+    }
+    /*
+        Hi
+        This is a fish
+    */"
+        </item>
+        <item>Remember that the constructor will be executed every time the object is created, therefore "hi" is also printed to the screen</item>
+    </string-array>
+
+    //static
+    <string-array name="Step4Sub5">
+        <item>You may be confused about using static in Java. Especially he has appeared in our hello world program</item>
+        <item>
+"    public static void main(String[] args)"
+        </item>
+        <item>Now let\'s try to create a function in our MyClass</item>
+        <item>
+"    public static void fish() {
+        System.out.println(\"this is a fish\");
+    }
+
+    public static void main(String[] args) {
+        fish();
+    }"
+        </item>
+        <item>To access the fish method, we only need to write the name of the method because there is static there.</item>
+        <item>
+"    public void fish() {
+        System.out.println(\"this is a fish\");
+    }
+
+    public static void main(String[] args) {
+        MyClass myClass = new MyClass();
+        myClass.fish();
+    }"
+        </item>
+        <item>From the code above, if we don\'t use static, we have to create an object from its class first to be able to access its methods</item>
+        <item>Of course static is very useful if we want to access methods or variables in a class.</item>
+        <item>
+"    static int a = 1;
+
+    public static void main(String[] args) {
+        System.out.println(a);
+    }"
+        </item>
+        <item>If it is not given static then you must first create an object class to be able to access variable a</item>
+        <item>If you access a variable with an object you don\'t need to add a ()</item>
+        <item>
+"    MyClass myClass = new MyClass();
+    System.out.println(myClass.a);"
+        </item>
+        <item>Remember, basically the () sign indicates that it is a function or method</item>
+    </string-array>
+
+    // packages
+    <string-array name="Step4Sub6">
+        <item>Now we will know what a package is.</item>
+        <item>Package is a means to group classes into 1. Just like when we group functions into 1 in a class file</item>
+        <item>If you create a Java project using visual studio code, you will see the name of your package from the location of the file</item>
+        <item>If you have MyClass.java file in the com/java/tutorial folder then the package will be com.java.tutorial</item>
+        <item>It\'s like just changing the nickname, from folder to package. Because basically the package is a sequence of folders for the location of our Java class files</item>
+        <item>Every Java file will have a package, and it is written at the very top of the first line of the Java file. Generally he looks like this</item>
+        <item>
+"    package com.my.tutorial;"
+        </item>
+        <item>For example, if we have many functions (methods), of course we will categorize them in a class.</item>
+        <item>Suppose the MyClass class has a function for the purpose of counting the number of students in the class.</item>
+        <item>Then we have many more classes for the purpose of counting students throughout the school, and we will group all those classes again into packages</item>
+        <item>Suppose the package is named com.hitung.siswa</item>
+        <item>Then we can create another package, suppose another package function is to calculate the total population in a province</item>
+        <item>And we name it com.count.province</item>
+        <item>Then we group the com.hitung.siswaschool and com.hitung.provinsi packages into the com.indonesia package</item>
+        <item>And so on. It\'s just about grouping, and how much grouping we make depends on our needs.</item>
+        <item>Then how does the MyClass.java class access the functions in the provincial package?</item>
+        <item>We can use import</item>
+        <item>Now suppose that the provincial package has a class called Regency and has the function countKabupaten()</item>
+        <item>
+"    package com.hitung.siswaschool;
+    import com.hitung.provinsi.Kabupaten;
+
+    public class MyClass {
+        public static void main(String[] args) {
+            District object = new District();
+            object.countRegency();
+        }
+    }"
+        </item>
+        <item>Look at the first line. Package assumes the current file or class belongs to which group</item>
+        <item>And import is used to link the current class with other classes based on their group.</item>
+        <item>Based on the example above, we only connect the Regency class. We can choose to directly import all classes in the com.hitung.provinsi package</item>
+        <item>
+"    import com.count.province.*;"
+        </item>
+        <item>The asterisk means all. This means that we connect all the classes in the com.hitung.provinsi package</item>
+        <item>This method is much easier than writing the same code over and over</item>
+        <item>Another example is when we use Scanner to take user input.</item>
+        <item>
+"    import java.util.Scanner;"
+        </item>
+        <item>This means that the Scanner class is in the java.util package and there are many more classes in that package</item>
+        <item>All those classes are in the directory where we installed the JDK (Java Development Kit). JDK is like a collection of classes that have been created in such a way to make it easier for us.</item>
+        <item>JDK contains many classes and libraries that are useful for us. Like Scanner for example</item>
+        <item>Leave the file there and never change it or there will be a continuous error.</item>
+    </string-array>
+
+    <string-array name="Step4Sub7">
+        <item>So far you\'ve probably seen the access modifier, or maybe you\'re not aware of it?</item>
+        <item>Public is an access modifier, it can make a class or method accessible from anywhere</item>
+        <item>To explore this make sure you understand the basic concepts of using packages in Java</item>
+        <item>Now let\'s see what access modifiers are in Java</item>
+        <item>public : makes a method, class or variable accessible from any class, even by classes in other packages</item>
+        <item>private : make a method, variable or class accessible only in the class file itself, so if the fish() method in the Animal class is private, the object that we have created cannot access the fish() method</item>
+        <item>If you don\'t specify the access modifier it will be set to its default, i.e. method, variable or class is available for any class provided it is still in the same package.</item>
+        <item>protected is the same as default, with the addition that subclasses can access methods, variables or classes protected from the superclass</item>
+        <item>We will study the subclass and superclass in the future. Now focus on using private, public and no access modifiers (default).</item>
+    </string-array>
+
+    <string-array name="Step4Sub8">
+        <item>Now we will discuss about the parameters of a function or method</item>
+        <item>
+"    public void MyFunction(String parameter) {
+
+    }"
+        </item>
+        <item>Parameters are enclosed in parentheses of a method. For the data type, you can use other data types as well.</item>
+        <item>This function is to send a value (in the form of a variable) to a method. The value of that parameter is then used in the method body to do something.</item>
+        <item>With parameters we can use the method many times with different inputs.</item>
+        <item>
+"    public static void MyFunction(String name, int age) {
+        System.out.println(\"My Name \" + name + \", My age \" + age);
+    }"
+        </item>
+        <item>Note that MyFunction() has 2 parameters separated by commas.</item>
+        <item>Remember to write down each type of data type used for each parameter.</item>
+        <item>Let\'s run our MyFunction() in the main function, using a different input of course.</item>
+        <item>
+"    public class MyClass {
+
+        public static void MyFunction(String name, int age) {
+            System.out.println(\"My Name \" + name + \", My age \" + age);
+        }
+
+        public static void main(String[] args) {
+            MyFunction(\"Sasmita\", 19);
+            MyFunction(\"John\", 20);
+        }
+    }
+    /*
+        My name is Sasmita, I am 19
+        My name is John, my age is 20
+    */"
+        </item>
+        <item>The code produces 2 different outputs in the name and age section, even though we use the same 1 function (method).</item>
+        <item>Remember that we can reuse a function as many times as we need.</item>
+    </string-array>
+
+    <string-array name="Step4Sub9">
+        <item>Now we will learn about getters and setters. But before that we will understand what "this" is in Java.</item>
+        <item>This means the class itself. Usually it refers to a variable in the current class.</item>
+        <item>If MyClass.java uses this, then this means MyClass.java itself.</item>
+        <item>
+"    private static int number;
+
+    public void setNumber(int number) {
+        this.number = number;
+    }"
+        </item>
+        <item>Look at the code above, this.number refers to the variable number, while -- = number refers to the int number of the parameter.</item>
+        <item>If the setNumber() method is executed, the value of the variable number in MyClass.java will be the same as the value we input into the parameter.</item>
+        <item>
+"    public class MyClass {
+
+        private static int number;
+
+        // This is the setter
+        public void setNumber(int number) {
+            this.number = number;
+        }
+
+        // These getters
+        public int getNumber() {
+            return numbers;
+        }
+
+        public static void main(String[] args) {
+            MyClass myClass = new MyClass();
+            myClass.setNumber(20);
+            System.out.println(myClass.getNumber());
+        }
+    }"
+        </item>
+        <item>Notice that in our main function, we first create an object because the setNumber() and getNumber() functions are not static.</item>
+        <item>Then we access the setNumber() method and assign a value of 20 to the parameter. That means the variable number in our MyClass.java will be set to 20 as well</item>
+        <item>Remember, variable number is not final so we can change it at any time.</item>
+        <item>
+"    number = 20;
+    // In the setter we use this
+    this.number = number;"
+        </item>
+        <item>After assigning a value to the variable number, we can retrieve the value using the getNumber() method</item>
+        <item>
+"    public int getNumber() {
+        return numbers;
+    }"
+        </item>
+        <item>See that getNumber() returns an integer, and that it returns the value taken from the variable number.</item>
+        <item>These processes are called getters and setters. Getters (fetch/return), setters (set/assign)</item>
+        <item>The setter of our code is the setNumber() function, when we use it, it will set the value for the variable number</item>
+        <item>While the getter of our code is the getNumber() function, it is called a getter because it can take the value of the variable number.</item>
+    </string-array>
+
+</resources>

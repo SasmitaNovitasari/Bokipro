@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- step 1 -->
+    <string-array name="Step1HTMLsub1">
+        <item>Do you still think that HTML is a programming language? If so, then you\'ve made a big mistake!</item>
+        <item>First identify the abbreviation of HTML (Hyper Text Markup Language)</item>
+        <item>From its abbreviation we know that HTML is a Markup Language. It\'s called markup language because it uses the </item> . tag
+        <item>In HTML there will be an opening tag and a closing tag</item>
+        <item>
+"    &lt;html> ... &lt;/html>"
+        </item>
+        <item>The closing is used to indicate which format we should stop at.</item>
+        <item>When HTML was first released in 1991, it only had 18 tags and of course it\'s growing now.</item>
+        <item>Then what is the difference between HTML and other programming languages?</item>
+        <item>HTML has no logical flow, it is fully used to design the front view that will be shown to the user.</item>
+        <item>If you are experienced in several other programming languages, then you will notice that HTML and other programming languages ​​are very different</item>
+        <item>Therefore HTML is included in the category of language that is easy to understand. You don\'t even need to use any compiler to run HTML</item>
+        <item>Just save the file with .html extension and open it using your favorite browser, it will display your HTML very well</item>
+        <item>Congratulations! You\'ll soon be getting into HTML. Keep learning!</item>
+    </string-array>
+
+    <string-array name="Step1HTMLsub2">
+        <item>HTML is constantly evolving and there are already several versions appearing, and the latest version is HTML5.</item>
+        <item>There is also version 1.0 which is the version from the first release</item>
+        <item>Regardless of the version number, they still use the same writing format. Although some features will be added or changed</item>
+        <item>Therefore we will learn basic HTML which can also be used in HTML5</item>
+        <item>In fact, the features and advantages of HTML5 will be more powerful if used in conjunction with CSS and Javascript</item>
+        <item>Because HTML is like a bone, javascript is like joints, brain and muscles, then CSS is like clothes to beautify your appearance.</item>
+    </string-array>
+
+    <string-array name="Step1HTMLsub3">
+        <item>Now we will learn the basic structure in HTML</item>
+        <item>
+"    &lt;html>
+        &lt;head>
+            &lt;title>My First HTML&lt;/title>
+        &lt;/head>
+
+        &lt;body>
+            This line of text
+        &lt;/body>
+    &lt;/html>"
+        </item>
+        <item>The main part is tag &lt;html> ... &lt;/html>. It works like a wrapper, all your HTML code must be inside it</item>
+        <item>head tag contains all the elements that help make HTML pages work. Especially when you use CSS, this will be studied in the future.</item>
+        <item>The &lt;title> tag indicates what message should be displayed in the tab title in the browser</item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html1.png</item>
+        <item>The body tag indicates our web content will be set there. Everything like text, images, links, lists, paragraphs and more.</item>
+        <item>body tag will be displayed to the user, so make the interface as attractive as possible.</item>
+    </string-array>
+
+
+    <!-- step 2-->
+    <string-array name="Step2HTMLsub1">
+        <item>In HTML there are several headings which are already there by default. They are &lt;h1> &lt;h2> &lt;h3> &lt;h4> &lt;h5> &lt;h6></item>
+        <item>
+"    &lt;body>
+        &lt;h1>This is the title of headings 1&lt;/h1>
+        &lt;h2>This is the title of headings 2&lt;/h2>
+        &lt;h3>This is the title of headings 3&lt;/h3>
+        &lt;h4>This is the title of headings 4&lt;/h4>
+        &lt;h5>This is the title of headings 5&lt;/h5>
+        &lt;h6>This is the title of headings 6&lt;/h6>
+    &lt;/body>"
+        </item>
+        <item>The bigger the number, the smaller the title. Using this tag will automatically bold your title</item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html2.png</item>
+        <item>It is not recommended to use headings for plain text or just to bold text</item>
+        <item>This is because search engines use headings to index website structure and content.</item>
+        <item>So make sure you use tags in HTML according to their function</item>
+    </string-array>
+
+    <string-array name="Step2HTMLsub2">
+        <item>You can also create a horizontal line using the &lt;hr></item> tag.
+        <item>
+"    &lt;body>
+        &lt;h1>This is the title of headings 1&lt;/h1>
+        &lt;hr>
+        &lt;p>This is paragraph 1&lt;/p>
+        &lt;p>This is paragraph 2&lt;/p>
+        &lt;p>This is &lt;br> paragraph 3&lt;/p>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html1.png</item>
+        <item>So easy isn\'t it? Even tags in HTML are very easy for humans to read because they generally use an abbreviation of the real name</item>
+    </string-array>
+
+    <string-array name="Step2HTMLsub3">
+        <item>In the previous example you may have seen &lt;p> and &lt;br/> tags which we haven\'t covered. Let\'s review the example and the code</item>
+        <item>
+"    &lt;body>
+        &lt;h1>This is the title of headings 1&lt;/h1>
+        &lt;hr>
+        &lt;p>This is paragraph 1&lt;/p>
+        &lt;p>This is paragraph 2&lt;/p>
+        &lt;p>This is &lt;br/> paragraph 3&lt;/p>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html1.png</item>
+        <item>Tag &lt;p> means paragraph, use this to enclose text or paragraphs that must be shown to the user. You can create as many paragraphs as you need</item>
+        <item>And the &lt;br/> tag is used to enter 1 line of text. Note that &lt;br/> does not have a closing tag.</item>
+    </string-array>
+
+    <string-array name="Step2HTMLsub4">
+        <item>Now we will learn how to write comments in HTML</item>
+        <item>Comments are written but not to be displayed to the user, but only for reference and reminder for yourself or other developers</item>
+        <item>It\'s like leaving a short message in our code</item>
+        <item>
+"    &lt;!-- Here is your comment -->"
+        </item>
+        <item>Comments will be very useful if your code is very long or looks complicated</item>
+        <item>Writing comments above can also be used for multi-line (many lines)</item>
+        <item>Just put &lt;!-- at the beginning of the sentence and --> at the end of the sentence (end of line)</item>
+        <item>
+"    &lt;!-- this is an example
+    multi-line comment -->"
+        </item>
+        <item>You can put comments anywhere and as many times</item>
+        <item>But remember! Comments can increase your file size</item>
+    </string-array>
+
+
+    <!-- step 3-->
+    <string-array name="Step3HTMLsub1">
+        <item>Text formatting is used to style our text</item>
+        <item>Tap to see an example!</item>
+        <item>
+"    &lt;body>
+        &lt;p>This is plain text&lt;/p>
+        &lt;p>&lt;b>This is bold text&lt;/b>&lt;/p>
+        &lt;p>&lt;i>This is italic text&lt;/i>&lt;/p>
+        &lt;p>&lt;big>This is big text&lt;/big>&lt;/p>
+        &lt;p>&lt;small>This is small text&lt;/small>&lt;/p>
+        &lt;p>&lt;strong>This is strong&lt;/strong>&lt;/p> text
+        &lt;p>This &lt;sub>subscripted text&lt;/sub>&lt;/p>
+        &lt;p>This &lt;sup>superscripted text&lt;/sup>&lt;/p>
+        &lt;p>&lt;ins>Inserted text (underline)&lt;/ins>&lt;/p>
+        &lt;p>&lt;del>This deleted text&lt;/del>&lt;/p>
+    &lt;/body>"
+        </item>
+        <item>You provided an image as a result of the above code. Let\'s tap again!</item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html4.png</item>
+        <item>So easy isn\'t it? Keep learning and playing around with HTML tags!</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub2">
+        <item>Attributes are useful for providing additional information to a tag, it can also modify the tag</item>
+        <item>attribute-name=\"value\"</item>
+        <item>It\'s like if you have text in microsoft word and then bold it (bold), then the attribute is bold</item>
+        <item>Attributes in HTML are written in the opening tag</item>
+        <item>
+"    &lt;body>
+        &lt;h1 align=\"center\">This is the title&lt;/h1>
+        &lt;p align=\"center\">test&lt;/p>
+    &lt;/body>"
+        </item>
+        <item>This will center align the text, you can also use left and right</item>
+        <item>align is the attribute name and anything between the quotes is the value.</item>
+        <item>You can also use the attribute for the body tag which will apply to all HTML bodies</item>
+        <item>This will be useful if you want all of your text to be centered without having to add the attributes one by one to each paragraph tag or headings</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub3">
+        <item>In the previous material we have studied text formatting, now we will learn about the &lt;span></item> tag
+        <item>&lt;span> is also used to format text</item>
+        <item>
+"    &lt;body>
+        &lt;p>
+            this is an example &lt;span style=\"color:red;\">span&lt;/span> in HTML
+        &lt;/p>
+    &lt;/body>"
+        </item>
+        <item>The \"span\" text section will be red because it is enclosed in a &lt;span> tag which has a red style</item>
+        <item>Attributes in the &lt;span> tag are not only limited to that</item>
+        <item>
+"    &lt;body>
+        &lt;p>
+            this is an example &lt;span style=\"color:red; background-color: darkgreen;\">span&lt;/span> in HTML
+        &lt;/p>
+    &lt;/body>"
+        </item>
+        <item>See that each style ends with a semicolon (semicolon) and is followed by another style.</item>
+        <item>You can also add values to the style attribute as much as you need. Don\'t forget to separate them with ; (semicolon)</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub4">
+        <item>In HTML you can also put images. Just use img tag without opening or closing</item>
+        <item>
+"    &lt;img src=\"image.jpg\" />"
+        </item>
+        <item>src is used to identify where the image is. You can even use the URL</item>
+        <item>If you save image.jpg in the images folder then use an example like this</item>
+        <item>
+"    &lt;img src=\"image/image.jpg\" />"
+        </item>
+        <item>img can be changed using attributes, such as width and height</item>
+        <item>
+"    &lt;img src=\"image/image.jpg\" width=\"10%\" height=\"10%\" />"
+        </item>
+        <item>For the unit of measure you can also use pixels (px)</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub5">
+        <item>In HTML you can create lists, and there are two ways to do this</item>
+        <item>Ordered List (calculated list), this is like a list in general that uses numbers such as 1 2 3 4 etc.</item>
+        <item>
+""           &lt;ol>
+            &lt;li>item one&lt;/li>
+            &lt;li>item two&lt;/li>
+            &lt;li>item three&lt;/li>
+        &lt;/ol>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html5.png</item>
+        <item>Note that &lt;li> is used for each item and all &lt;li> tags are wrapped in &lt;ol> tags which means ordered list</item>
+        <item>Unordered List, this does not use a number as a reference item, but like a black circle</item>
+        <item>
+"    &lt;body>
+        &lt;ul>
+            &lt;li>item one&lt;/li>
+            &lt;li>item two&lt;/li>
+            &lt;li>item three&lt;/li>
+        &lt;/ul>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html6.png</item>
+        <item>The above example also uses the &lt;li> tag for each item and it is wrapped in the &lt;ul> tag which means unordered list</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub6">
+        <item>Now we will learn to create a table in our HTML body</item>
+        The <item>tag &lt;table> is used to create a table, tap to see an example!</item>
+        <item>
+"    &lt;body>
+        &lt;table border=\"2\">
+            &lt;tr align=\"center\">
+                &lt;th>No&lt;/th>
+                &lt;th>Name&lt;/th>
+                &lt;th>Absent&lt;/th>
+            &lt;/tr>
+            &lt;tr align=\"center\">
+                &lt;td>1&lt;/td>
+                &lt;td>Sasmita&lt;/td>
+                &lt;td>20&lt;/td>
+            &lt;/tr>
+            &lt;tr align=\"right\">
+                &lt;td>2&lt;/td>
+                &lt;td colspan=\"2\">Smith&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>3&lt;/td>
+                &lt;td>John&lt;/td>
+                &lt;td bgcolor=\"blue\">15&lt;/td>
+            &lt;/tr>
+        &lt;/table>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html7.png</item>
+        <item>Now we will discuss the code one by one</item>
+        <item>&lt;tr> (table row) is used to create rows. This means that every line must be inside this tag.</item>
+        <item>&lt;td> (table data) is used to create cells (each box in a row). Therefore it is wrapped using the &lt;tr></item> . tag
+        <item>&lt;th> (table header) is used to create headers which generally automatically bold text.</item>
+        <item>For additional attributes, namely the border to determine the line thickness in the table.</item>
+        <item>bgcolor used to change the background color</item>
+        <item>colspan to merge multiple columns sideways</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub7">
+        <item>You must have seen text in browsers that is colored and generally underlined. And when pressed it will take us to another url</item>
+        <item>It\'s called a link and it must be familiar to you</item>
+        <item>tags &lt;a> are used to create links in html</item>
+        <item>
+"    &lt;body>
+        &lt;a href=\"https://www.google.com\">Click Here&lt;/a>
+    &lt;/body>"
+        </item>
+        <item>Now there will be a colored "Click Here" text on your website, and when pressed it will redirect to a google link</item>
+        <item>This means that you already know that the href attribute is used to determine the url (the address).</item>
+        <item>
+"    &lt;a href=\"https://www.google.com\" target=\"blank\">Click Here&lt;/a>"
+        </item>
+        <item>The target attribute with a value of blank is used so that when the user clicks on the text, the link will be opened in a new tab</item>
+        <item>This will make it easier for users to return to our website using the tab feature in the browser without leaving the page from the link</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub8">
+        <item>Now we will study the &lt;div></item> tag tags
+        <item>&lt;div> is like a container that can wrap many other elements in HTML</item>
+        <item>It is similar to the &lt;html> tag, the difference is that we can only use the &lt;html> tag once, while the &lt;div> tag can be used multiple times</item>
+        <item>
+"    &lt;body style=\"color: white;\">
+        &lt;div style=\"padding: 20px; margin: 10px; text-align: center; background-color: blue; border-radius: 10px;\">
+            &lt;h1>These are headings&lt;/h1>
+            &lt;hr width=\"70%\">
+        &lt;/div>
+
+        &lt;div style=\"padding: 20px; margin: 10px; text-align: center; background-color: green; border-radius: 10px;\">
+            &lt;p>This is paragraph 1&lt;/p>
+            &lt;p>This is paragraph 2&lt;/p>
+        &lt;/div>
+
+        &lt;div style=\"padding: 20px; margin: 10px; text-align: center; background-color: cornflowerblue; border-radius: 10px;\">
+            &lt;p>This is paragraph 3&lt;/p>
+        &lt;/div>
+    &lt;/body>"
+        </item>
+        <item>https://serverdevapps.000webhostapp.com/ProgrammerApp/ImagesHtml/html8.png</item>
+        <item>Note that each block of the &lt;div> tag combines elements within it and creates its own background</item>
+        <item>&lt;div> can be used to set the style of a content block and of course its attributes are not just like the one in the example</item>
+        <item>There are many other attributes in HTML that you can explore</item>
+        <item>Now you can create as many content blocks as you need</item>
+    </string-array>
+
+    <string-array name="Step3HTMLsub9">
+        <item>In the previous material, we often use attributes that require color values</item>
+        <item>and we use values ​​like red, blue, green etc</item>
+        <item>Then what if we want to use a more specific color?</item>
+        <item>We can use RGB color for attribute value</item>
+        <item>
+"    style=\"color: rgb(255, 255, 255)\""
+        </item>
+        <item>The example above is using RGB for white</item>
+        <item>In addition to RGB you can also use hex colors starting with a # sign followed by a 6-digit color code</item>
+        <item>
+"    style="color: #ffffff;""
+        </item>
+        <item>Now you can use the color of your choice more specifically</item>
+    </string-array>
+</resources>

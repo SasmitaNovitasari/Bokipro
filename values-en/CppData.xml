@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Step 1 -->
+
+    <!--What is C++ -->
+    <string-array name="Step1CPPsub1">
+        <item>Now we will know about C++</item>
+        <item>C++ is like an improved C programming language. This is because C++ is an extension of the C language. </item>
+        <item>It was developed by Bjarne Stroustrup at Bell Labs in the early 1970s</item>
+        <item>If you are familiar with Java, then you will see that these two languages ​​have a lot in common</item>
+        <item>To run C++ programs, you need a compiler that is in charge of converting our C++ language into machine language</item>
+        <item>And usually every programming language has its own compiler</item>
+        <item>In addition, you also need a debugger to detect which code is incorrect or inaccurate. This is very easy for us to solve errors in the program</item>
+        <item>That means, you will need an IDE (Integrated Development and Environment). He is a tool that already has the equipment according to our needs</item>
+        The <item>IDE includes an editor, compiler and debugger. Of course with a beautiful look and feel</item>
+        <item>There are tons of free IDEs for C++ that you can use. Choose your own according to your taste</item>
+    </string-array>
+    <!--Hello World!-->
+    <string-array name="Step1CPPsub2">
+        <item>Now we will try to make a program that prints the text "hello world"</item>
+        <item>
+"    #include &lt;iostream>
+    using namespace std;
+
+
+    int main() {
+        cout &lt;&lt; \"Hello world\" &lt;&lt; endl;
+        cout &lt;&lt; \"This is for \\nEnter\";
+        returns 0;
+    }"
+        </item>
+        <item>We will break the above code one by one</item>
+        <item>
+"    #include &lt;iostream>"
+        </item>
+        <item>He is a header in C++, for this material we will study in the next discussion</item>
+        <item>
+"    using namespace std;"
+        </item>
+        <item>Same as written there, the code above is called namespace, it is useful to make our writing easier</item>
+        <item>no need to be afraid, we will also discuss this in the next material</item>
+        <item>
+"    int main() {
+        // Your code is here
+        returns 0;
+    }"
+        </item>
+        <item>All of our programs must end in the main function because it is our main function</item>
+        <item>For now all you have to remember is, the compiler will run whatever code is in the main function</item>
+        <item>and you may see return 0; at the end of the main function</item>
+        This <item> indicates that he did not return anything. No need to be afraid if you don\'t understand</item>
+        <item>some will not be discussed here and there will be separate material to discuss them.</item>
+        <item>
+"    cout &lt;&lt; \"Hello world\" &lt;&lt; endl;
+    cout &lt;&lt; \"This is for \\nEnter\";"
+        </item>
+        <item>It is used to print text, pay attention to the use of cout and also the &lt;&lt;</item>
+        <item>Don\'t forget the semicolon (;) at the end of the code or the compiler will return an error</item>
+        <item>endl means newline, it also applies to \\n which is used to create newline</item>
+    </string-array>
+    <!--Header-->
+    <string-array name="Step1CPPsub3">
+        <item>Like the hello world example above, you have seen the standard headers in C++</item>
+        <item>
+"    #include &lt;iostream>"
+        </item>
+        <item>Headers are used to insert existing libraries into the program to make it easier for us</item>
+        <item>because there is the word include there which means (including).</item>
+        <item>Sign &lt; ... > enclose the header name that we use. The header name you use depends on what you need.</item>
+        <item>An example of using the iostream header is when we use cout for output</item>
+        <item>
+"    cout &lt;&lt; \"Hello world\" &lt;&lt; endl;"
+        </item>
+        <item>If you don\'t declare an iostream header then you can\'t use cout.</item>
+        <item>If you try to use cout without declaring the iostream header first, the compiler will leave an error message for you</item>
+        <item>error: ‘cout’ was not declared in this scope</item>
+        <item>The conclusion is, cout is one of the features of the iostream header</item>
+        <item>iostream header is already used as standard input - output in C++</item>
+        <item>But it is possible for you to use another header</item>
+    </string-array>
+    <!--Namespace-->
+    <string-array name="Step1CPPsub4">
+        <item>In the previous material you have seen the use of namespaces in C++ programs</item>
+        <item>
+"    #include &lt;iostream>
+    using namespace std;"
+        </item>
+        <item>Now we will create an example if we don\'t use a namespace</item>
+        <item>
+"    #include &lt;iostream>
+
+    int main() {
+        std::cout &lt;&lt; \"Hello World\" &lt;&lt; std::endl;
+        returns 0;
+    }"
+        </item>
+        <item>If we don\'t use the std namespace, then every writing cout, cin, endl or anything that includes the features of the &lt;iostream> header must be added to the syntax std::</item>
+        <item>For an explanation of the cin command we will discuss later, now focus on what happens if we don\'t use the namespace</item>
+        <item>And of course this will make our code longer</item>
+        <item>So adding the std namespace will speed up our coding process</item>
+        <item>Using it or not is optional, but in this lesson we will use the feature</item>
+    </string-array>
+    <!--Variable-->
+    <string-array name="Step1CPPsub5">
+        <item>Now we will study variables</item>
+        <item>In short, a variable is like a container to hold something. But in programming, the type contained in the variable must match the type of the container.</item>
+        <item>Suppose you have a box-shaped container, then the contents must also be square. This makes it easier for us to manage what data we hold.</item>
+        <item>This type is known as a data type</item>
+        <item>Now let\'s first identify the types of data types in variables in C++</item>
+        <item>
+"    int Integer;
+    decimal floats;
+    double decimalExtra;
+    boolean boolean;
+    char characters;
+    word strings;
+
+    int main() {
+
+    }"
+        </item>
+        <item>Let\'s discuss one by one</item>
+        <item>Integer (int), is used to hold integers. Remember that any number that does not contain a comma (decimal) is an integer.</item>
+        <item>Floating Point (float), to accommodate decimal numbers</item>
+        <item>Double (double), just like float which holds decimal values, but double has more fractions.</item>
+        <item>Boolean (bool), to store the value true or false. True will be 1 and false will be 0.</item>
+        <item>Character (char), just as the name suggests, it is used to store characters. This means it only stores 1 letter. The value must be enclosed in single quotes (\')</item>
+        <item>String (string), this is like a collection of chars put together, you can use this data type to store a word or sentence.</item>
+        <item>To fill in that variable you can directly use the name of the variable followed by the value you want to set</item>
+        <item>
+"    #include &lt;iostream>
+    using namespace std;
+
+
+    intInteger;
+
+    int main() {
+        Integer = 15;
+        cout &lt;&lt; integers; // 15
+        Integer = 20;
+        cout &lt;&lt; integers; // 20
+    }"
+        </item>
+        <item>You can also set the default value of a variable if no other value is specified</item>
+        <item>
+"    int Integer = 12;
+    decimal float = 5.0;
+    double decimalExtra = 5.0;
+    bool boolean = true;
+    char characters = \'A\';
+    string words = "Hi, I\'m a programmer";"
+        </item>
+        <item>This process is known as initialization</item>
+        <item>This means that the value you set above will be the default value of the variable</item>
+        <item>And that value will be used as the last option when no new value is set</item>
+    </string-array>
+    <!--Comments-->
+    <string-array name="Step1CPPsub6">
+        <item>Comments are used to make it easier for us to remember the flow of the program</item>
+        <item>he will not be executed by the compiler. It\'s like we left a note on our program</item>
+        <item>
+"    // This is a one line comment
+    /* this is a comment
+        multiple lines */"
+        </item>
+        <item>You can add as many comments and anywhere</item>
+        <item>But remember, the more comments you add, the bigger your program file size</item>
+    </string-array>
+    <!--User Input-->
+    <string-array name="Step1CPPsub7">
+        <item>In the previous material you learned how to print text. Now we will learn how to take input from user via terminal</item>
+        <item>Input from the user must be stored in a variable so that we can call it anytime</item>
+        <item>The type of data type entered by the user must be the same as the data type of the container variable.</item>
+        <item>otherwise, the compiler will return an error again. But don\'t worry, he always tells us which part is wrong</item>
+        <item>
+"    int main() {
+        name strings;
+        int age;
+        cout &lt;&lt; \"Enter name :\"; cin >> name;
+        cout &lt;&lt; \"Enter age : \"; cin >> age;
+        returns 0;
+    }"
+        </item>
+        <item>Note that we use cin followed by a >> sign to take user input</item>
+        <item>cin will request input from the user and store it in the specified variable</item>
+        <item>after the value has been stored in the variable, then we can access the value at any time </item>
+        <item>
+"    cout &lt;&lt; name &lt;&lt; \" aged \" &lt;&lt; age + 5;"
+        </item>
+        <item>He will print the name as entered by the user, but the age entered by the user will be added by 5</item>
+        <item>Great, now you can interact with users!</item>
+    </string-array>
+    <!--Operator-->
+    <string-array name="Step1CPPsub8">
+        <item>In your school, you may have studied arithmetic operators</item>
+        <item>In programming we will also use it</item>
+        <item>He is addition (+), subtraction (-), multiplication (*), division (/) and modulo (%).</item>
+        <item>There may be 1 arithmetic operator that we should discuss, namely modulo</item>
+        <item>Modulo works much like division, the difference is that division returns the result while modulo returns the remainder</item>
+        <item>If 11/9 = 1,2 then in division it will return 1 if it is stored in an int variable, and return 1,2 if it is stored in a double or float variable</item>
+        <item>while it will return 2 if using modulo, because 11/9 is 1 and still leaves 2</item>
+        <item>
+"    int a = 20 + 5;
+    float b = 11 / 9;
+    int c = 2 * 2;
+    int d = 11 % 9;
+    int e = 2 - 1;"
+        </item>
+        <item>Remember to always end your lines of code with a semicolon.</item>
+        <item>You can also use the assignment operator to shorten the code</item>
+        <item>
+"    int a += 12;"
+        </item>
+        <item>The above code means int a = a + 12;</item>
+        <item>Variable a will be added by 12 then will store it in the same variable. This makes it easier for us not to need to create a new variable for every new value</item>
+        <item>Assignment operator applies to all basic arithmetic operators, just change the plus sign (+) from the code above according to the operator you want to use</item>
+    </string-array>
+    <!--Increment & Decrement-->
+    <string-array name="Step1CPPsub9">
+        <item>As the name implies, increment to increase a value and decrement to decrease a value</item>
+        <item>In the previous material you learned about assignment operators, they work similarly to increment or decrement</item>
+        <item>The difference is, in the assignment operator you can set any number of multiples to be added, subtracted, multiplied, divided or modulo</item>
+        <item>And also assignment operators can use all kinds of arithmetic operators</item>
+        <item>while increment and decrement only use operators plus (+) and minus (-) which only changes the number by 1</item>
+        <item>
+"    int main() {
+        int x = 1;
+
+        // increment
+        x++; // equals int x = x + 1;
+        cout &lt;&lt; x &lt;&lt; endl; // 2
+
+        // decrement
+        x--; // equals int x = x - 1;
+        cout &lt;&lt; x &lt;&lt; endl; // 1
+    }"
+        </item>
+        <item>Pay attention to the decrement section, the initial x value is 2 because it has passed the increment, so when it is reduced by 1 it returns 1</item>
+        <item>Now let\'s get acquainted with prefix and postfix</item>
+        <item>
+"    int x = 34;
+    cout &lt;&lt; x &lt;&lt; endl; // output 34
+    int y = ++x; // this is a prefix
+    cout &lt;&lt; y &lt;&lt; endl; // output 35
+    cout &lt;&lt; x &lt;&lt; endl; // output 35"
+        </item>
+        <item>prefix increases the value of x first (++) by 1, then uses its latest value (x) and is stored in the variable y</item>
+        <item>
+"    int x = 34;
+    cout &lt;&lt; x &lt;&lt; endl; // output 34
+    int y = x++; // this is postfix
+    cout &lt;&lt; y &lt;&lt; endl; // output 34
+    cout &lt;&lt; x &lt;&lt; endl; // output 35"
+        </item>
+        <item>postfix uses the old value (x) and is stored in the variable y, then the new x value is increased by 1 (++)</item>
+        <item>Review the output of the variable x value, before and after passing the prefix or postfix!</item>
+        <item>prefix and postfix can also use decrement, just change without plus (+) to (-).</item>
+        <item>And of course the value of x is no longer added by 1, but minus 1</item>
+    </string-array>
+
+
+    <!-- Step 2 Loops -->
+
+    <!--if statement-->
+    <string-array name="Step2CPPsub1">
+        <item>Now we will learn about if else loop</item>
+        <item>if else is used to compare something, let\'s make a simple analogy for you</item>
+        <item>If the ticket number is 10 then he gets a bicycle. If it\'s not 10 then he gets a book</item>
+        <item>
+"    int main() {
+        intTicketnumber = 10;
+        if (TicketNumber == 10) {
+            cout &lt;&lt; \"Get a bicycle\" &lt;&lt; endl;
+        } else {
+            cout &lt;&lt; \"Get a book\" &lt;&lt; endl;
+        }
+    }"
+        </item>
+        <item>The output of the above code will produce "Get a bicycle" because the Ticket number is 10.</item>
+        <item>Meanwhile, if the Ticket number is not 10, then the program inside else will run and print the text \"Get a book\"</item>
+        <item>else is like a last resort if the condition of if is false</item>
+        <item>Pay attention to the == sign, here we use 2 == signs to compare the conditions in the if</item>
+        <item>You can also use other markers</item>
+        <item>less than (&lt;), greater than (>), less than equal to (&lt;=) or greater than equal to (>=)</item>
+    </string-array>
+    <!--nested if statement-->
+    <string-array name="Step2CPPsub2">
+        <item>From its name you can understand the meaning of nested, namely if inside if. Let\'s make a simple analogy for you</item>
+        <item>If the ticket number is 10 then check whether he is the organizer or not, if the organizer then the prize is not given, if not the committee then the prize is given</item>
+        <item>
+"    int main() {
+        intTicketnumber = 10;
+        string status = \"committee\";
+        if (TicketNumber == 10) {
+            if (status == \"committee\") {
+                cout &lt;&lt; \"Gift void\" &lt;&lt; endl;
+            } else {
+                cout &lt;&lt; \"Get a bicycle\" &lt;&lt; endl;
+            }
+        } else {
+            cout &lt;&lt; \"Get a book\" &lt;&lt; endl;
+        }
+    }"
+        </item>
+        <item>The above code will result in \"Prize cancelled\" because my status is committee</item>
+        <item>If status contains any value other than \"committee\" then the output is \"Get bicycle\"</item>
+        <item>Note that we also add else inside the nested if</item>
+        <item>else can be added as long as it is combined with an if loop</item>
+        <item>or you can also not use else because if is okay without else</item>
+        <item>while else must always be combined with if</item>
+        <item>Remember that you can only add 1 else for each if loop</item>
+    </string-array>
+    <!--Logic Operators-->
+    <string-array name="Step2CPPsub3">
+        <item>Sometimes we want to add more logic to the if loop but don\'t want to create nested ifs</item>
+        <item>Let\'s take the example of a nested if analogy from the material before ny</item>
+        <item>If the ticket number is 10 then check whether he is the organizer or not, if the organizer then the prize is not given, if not the committee then the prize is given</item>
+        <item>
+"    int main() {
+        intTicketnumber = 10;
+        string status = \"not committee\";
+        if (TicketNumber == 10 &amp;&amp; status != "committee") {
+            cout &lt;&lt; "Get a bike";
+        } else {
+            cout &lt;&lt; "Prize void";
+        }
+    } // output : Got bicycle"
+        </item>
+        <item>Pay attention to the != sign which means not (NOT), meaning status must have any value other than \"committee\"</item>
+        <item>also have a look at the logical &amp;&amp; (and), if using this logical operator then both conditions must be true</item>
+        <item>Ticket number must be 10 and status must be anything other than \"committee\"</item>
+        <item>You can also use the || . operator (or), it will evaluate to true if one of the conditions is true</item>
+        <item>
+"    int main() {
+        intTicketnumber = 10;
+        string status = \"committee\";
+        if (TicketNumber == 10 || status != \"committee\") {
+            cout &lt;&lt; "Get a bike";
+        } else {
+            cout &lt;&lt; "Prize void";
+        }
+    } // output : Got bicycle"
+        </item>
+        <item>The condition in if is still executed because the comparison on the ticket number is true even though the comparison on the status is wrong</item>
+        <item>else will only be executed if the comparison between the two is false</item>
+    </string-array>
+    <!--Operator else if-->
+    <string-array name="Step2CPPsub4">
+        <item>In c++ you can use else if, provided that the else if must be combined with the if</item>
+        <item>else if will be executed if the condition in the if is false. </item>
+        <item>else if is similar to if, the difference is that it cannot stand alone and must always be combined with if</item>
+        <item>
+"    int main() {
+        intTicketnumber = 10;
+        if (TicketNumber == 1) {
+            cout &lt;&lt; \"one\";
+        } else if (TicketNumber == 10) {
+            cout &lt;&lt; \"ten\";
+        } else if (TicketNumber == 20) {
+            cout &lt;&lt; \"twenty\";
+        } else {
+            cout &lt;&lt; \"all wrong\";
+        }
+    } // output : ten "
+        </item>
+        <item>Notice that we only have 1 else, but there are 2 else ifs in there</item>
+        <item>If the ticket number is 10 then the if condition is false and he will continue checking to else if and else if</item>
+        <item>But if neither if nor else if is true, then else will be executed as the last action</item>
+        <item>If there is no else there then nothing else has to be executed.</item>
+        <item>You can add as many else ifs as you need</item>
+    </string-array>
+    <!--Switch Statement-->
+    <string-array name="Step2CPPsub5">
+        <item>In the previous material you already know about else if</item>
+        <item>The switch loop works similarly to the else if, it looks for the correct comparison and executes it</item>
+        <item>
+"    int main() {
+        intTicketnumber = 11;
+        switch (Ticket number) {
+            case 1:
+                cout &lt;&lt; \"one\";
+                breaks;
+            case 11:
+                cout &lt;&lt; \"eleven\";
+                breaks;
+            case 20:
+                cout &lt;&lt; \"twenty\";
+                breaks;
+            defaults:
+                cout &lt;&lt; \"all wrong\";
+        }
+    }"
+        </item>
+        <item>Pay attention to how variables are enclosed in switch brackets. This means that the value of the variable will be looked for in comparison</item>
+        <item>Always pay attention to the indentation of the case and break, if you forget the break then the comparison below will also be executed</item>
+        <item>This will result in a logical error that the debugger can\'t show</item>
+        <item>Pay close attention to the default section and the fact that there is no break there</item>
+        The default <item>works like else, it will be executed as the last action if none of the comparisons are true in each case.</item>
+        <item>In addition to the int data type, you can also compare the string data type for each case, just enclose the value of the case with double quotes</item>
+    </string-array>
+    <!--While Loop-->
+    <string-array name="Step2CPPsub6">
+        <item>Now we will learn while loop</item>
+        <item>it will run and continue as long as the condition is true</item>
+        <item>
+"    int main() {
+        intTicketnumber = 11;
+        while (TicketNumber == 11) {
+            cout &lt;&lt; \"y\";
+        }
+    }"
+        </item>
+        <item>Terminal will print the letter y forever because TicketNumber is always 11 which causes the condition in while to always be true</item>
+        <item>
+"    int main() {
+        intTicketnumber = 11;
+        int position = 0;
+        while (TicketNumber == 11) {
+            cout &lt;&lt; \"test\" &lt;&lt; endl;
+            if (position == 2) {
+                Ticket number = 5;
+            }
+            position++;
+        }
+    }
+    /*
+        test
+        test
+        test */"
+        </item>
+        <item>Note that every while run, it will increase the position value by 1, then if the value in the position variable is 2 then the value of the TicketNumber variable is changed</item>
+        <item>by changing the value of the TicketNumber variable, causes the condition in the while statement to be false</item>
+        <item>and this is when the while program stops executing</item>
+    </string-array>
+    <!--Do While Loop-->
+    <string-array name="Step2CPPsub7">
+        <item>Now we will learn about do while loop</item>
+        <item>do will be executed at least once, regardless of whether the while condition is true or false. </item>
+        <item>If the condition is true then do will be executed again, but if it is false then it will stop executing</item>
+        <item>Let\'s make a simple analogy example for you</item>
+        <item>If the age is less than or equal to 10 then he is a child, if greater than 10 then he is a teenager. Then ask again whether you want to repeat the program, if yes then the program is repeated, if not then the program is stopped</item>
+        <item>
+"    int main() {
+        int age;
+        char repeat = \'n\';
+        bool condition;
+        do {
+            cout &lt;&lt; \"Enter age : \"; cin >> age;
+            if (age &lt;= 10) {
+                cout &lt;&lt; “children” &lt;&lt; endl;
+            } else if (age > 10) {
+                cout &lt;&lt; "teenagers" &lt;&lt; endl;
+            } else {
+                cout &lt;&lt; \"Invalid input\" &lt;&lt; endl;
+            }
+
+            cout &lt;&lt; \"Want to repeat the program (y/n) ? \"; cin >> repeat;
+            if (repeat == \'y\') {
+                condition = true;
+            } else {
+                condition = false;
+            }
+        } while (condition == true);
+    }"
+        </item>
+        <item>Note that do will be executed once, regardless of whether the while condition is true or false. We haven\'t even set a value for the condition variable</item>
+        <item>After the user inputs the age, the if else program is run to check whether he is a child or a teenager.</item>
+        <item>Then we ask for input again whether the user wants to repeat the program, if y then the condition is true and make the while statement is true</item>
+        <item>while will repeat the code from the beginning, i.e. from do</item>
+        <item>But if the user selects n then the while condition will be false and it will not be executed</item>
+        <item>Even though while doesn\'t execute, we have executed do once</item>
+        <item>That means the flow of this program is, do is executed and after it\'s finished it then executes while, if while is true then do is executed again and when finished, the program will run while again</item>
+        <item>and so on..</item>
+        <item>Now that you understand the do while concept, keep learning!</item>
+    </string-array>
+    <!--for loop-->
+    <string-array name="Step2CPPsub8">
+        <item>Before learning more about for, first identify the syntax of the for loop</item>
+        <item>
+"    for (initialization; condition; increment/decrement) {
+        // statement
+    }"
+        </item>
+        <item>Now let\'s make a program to print the numbers 1 to 5 using for</item>
+        <item>
+"    int main() {
+        for (int a = 1; a &lt;= 5; a++) {
+            cout &lt;&lt; a &lt;&lt; endl;
+        }
+    }
+    /*
+        1
+        2
+        3
+        4
+        5 */"
+        </item>
+        The <item>variable a that we have initialized will be used as the initial value for the for loop</item>
+        <item>then a will be checked whether it is less than or equal to 5. Otherwise a will be increased by 1 (a++)</item>
+        <item>Now let\'s create an example for using decrement. We will try to print from number 5 to 1</item>
+        <item>
+"    int main() {
+        for (double a = 5; a >= 1; a--) {
+            cout &lt;&lt; a &lt;&lt; endl;
+        }
+    }
+    /*
+        5
+        4
+        3
+        2
+        1 */"
+        </item>
+        <item>Pay close attention to the condition, as long as a is greater than or equal to 1, the value of a will be reduced by 1</item>
+        <item>In addition to using increment and decrement, you can also use assignment operators to specify multiples</item>
+        <item>
+"    int main() {
+        for (double a = 1; a &lt;= 5; a+=2) {
+            cout &lt;&lt; a &lt;&lt; endl;
+        }
+    }
+    /*
+        1
+        3
+        5 */"
+        </item>
+        <item>Now the output will be a multiple of 2</item>
+        <item>Great-!! You already understand all the loops in C++, keep on learning and don\'t forget to play around with the code</item>
+        <item>Don\'t be a lazy programmer-!!</item>
+    </string-array>
+
+
+    <!-- Step 3 Function -->
+
+    <!--Function-->
+    <string-array name="Step3CPPsub1">
+        <item>Functions are often called methods</item>
+        <item>Functions are a way for us to group code. This will make our code more concise</item>
+        <item>Not only that, functions can allow us to use the same code over and over</item>
+        <item>Now let\'s create an example function to display the food and beverage menu</item>
+        <item>
+"    #include &lt;iostream>
+    using namespace std;
+
+    // function
+    void menu() {
+        cout &lt;&lt; \"Menu : \" &lt;&lt; endl;
+        cout &lt;&lt; “1. Sea Food” &lt;&lt; endl;
+        cout &lt;&lt; “2. Chicken” &lt;&lt; endl;
+        cout &lt;&lt; “3. Juice” &lt;&lt; endl;
+    }
+
+    int main() {
+        menu();
+    }"
+        </item>
+        <item>We set menu as function name and set void as return type</item>
+        <item>We will discuss the return type in the future.</item>
+        <item>To call a function, we use the name of the function followed by a sign ()</item>
+        <item>Do you remember that all our code must end in the main function?</item>
+        <item>That\'s why we call the menu() function in our main method</item>
+        <item>You can also call the menu function as many times as you need</item>
+        <item>
+"    int main() {
+        menu();
+        menu();
+        menu();
+        menu();
+    }"
+        </item>
+        <item>This is definitely easier for us than having to rewrite all the code in the menu() function many times</item>
+        <item>Always remember to call the menu() function in our main method or it won\'t execute</item>
+    </string-array>
+    <!--Parameters-->
+    <string-array name="Step3CPPsub2">
+        <item>Functions have parameter attributes that allow us to assign different values ​​to each variable</item>
+        <item>
+"    void myFunction(int parameter) {
+
+    }"
+        </item>
+        <item>Parameters are between the brackets of a method</item>
+        <item>He serves to send a value in the form of a variable to the function</item>
+        <item>Any code in the myFunction() function can use the variable in the parameter.</item>
+        <item>For the data type you can use the same data type as creating a variable in general</item>
+        <item>
+"    void name(string name) {
+        cout &lt;&lt; \"My name is \" &lt;&lt; name &lt;&lt; endl;
+    }"
+        </item>
+        <item>The value of the variable name is currently empty, and we will set the value when calling the function</item>
+        <item>
+"    int main() {
+        name(\"John\");
+        name(\"Smith\");
+    }
+    /*
+        My name is : John
+        My name is : Smith */"
+        </item>
+        <item>Functions allow us to use the same code with different variable values</item>
+    </string-array>
+    <!--Multiple Parameters-->
+    <string-array name="Step3CPPsub3">
+        <item>Sometimes we will need a function but with a lot of variables to modify</item>
+        <item>we can use multiple parameters, we only have to put a comma for each parameter</item>
+        <item>
+"    void myFunction(string name, int age) {
+        // your code
+    }"
+        </item>
+        <item>For each parameter we have to specify the data type as well, don\'t forget to separate them with a comma</item>
+        <item>You can now use the name and age variables in the myFunction() function and set their values ​​when calling the function</item>
+    </string-array>
+    <!--Default Parameter Value-->
+    <string-array name="Step3CPPsub4">
+        <item>We can set a default value for a parameter</item>
+        <item>it works like when we initialize a variable</item>
+        <item>If we don\'t assign a new value to it, it will use its default value</item>
+        <item>
+"    void myFunction(string name = \"Sasmita\") {
+        cout &lt;&lt; \"My name is : \" &lt;&lt; name &lt;&lt; endl;
+    }
+
+    int main() {
+        myFunction();
+        myFunction(\"Smith\");
+    }
+    /*
+        My name is : Sasmita
+        My name is : Smith */"
+        </item>
+        <item>Note that we don\'t set a value for the parameter in the first function call</item>
+        <item>Since there is no new value set, it will use the default value already set in the parameter</item>
+    </string-array>
+    <!--Overloading-->
+    <string-array name="Step3CPPsub5">
+        <item>Choosing a name for a function can sometimes put a developer in a dilemma</item>
+        <item>This looks simple but if our code is long, we should be able to come up with function names that are easy to remember, specific and don\'t collide with others</item>
+        <item>But in C++ you can create 2 functions with the same name, provided they have different data types in their parameters</item>
+        <item>
+"    void myFunction(string name) {
+        cout &lt;&lt; \"My name is : \" &lt;&lt; name &lt;&lt; endl;
+    }
+
+    void myFunction(int age) {
+        cout &lt;&lt; \"My age is : \" &lt;&lt; age &lt;&lt; endl;
+    }"
+        </item>
+        <item>There is always a distinguishing characteristic between the two, if you use the same code in a new function, then there is no point in creating that function</item>
+        <item>it will only give error in your code</item>
+        <item>Make sure the parameters between the two use different data types.</item>
+        <item>The different meaning here doesn\'t mean that after you use the string data type in the previous function, you can\'t use the string data type in other functions as well</item>
+        <item>
+"    void myFunction(string name) {
+        cout &lt;&lt; \"My name is : \" &lt;&lt; name &lt;&lt; endl;
+    }
+
+    void myFunction(string name, int age) {
+        cout &lt;&lt; \"My age is : \" &lt;&lt; name &lt;&lt; endl;
+    }"
+        </item>
+        <item>We can still use the string data type in the second myFunction(), and the difference is that we add the int data type there</item>
+        <item>So there are still different characteristics between the two</item>
+    </string-array>
+    <!--Recursion-->
+    <string-array name="Step3CPPsub6">
+        <item>Recursive function is when a function calls itself</item>
+        <item>and when he summons himself, we must create a condition to make him stop.</item>
+        <item>
+"    void test(int number) {
+        cout &lt;&lt; numbers;
+        number--;
+        test(number);
+    }
+
+    int main() {
+        test(5);
+    }"
+        </item>
+        <item>The above code will print the number 5 and continue to reduce it by 1, then print it. The program will run infinity (forever).</item>
+        <item>You can stop the process by pressing ctrl + C in the terminal</item>
+        <item>Now let\'s create a condition to stop it</item>
+        <item>
+"    void test(int number) {
+        if (number == 1) {
+            cout &lt;&lt; numbers;
+        } else {
+            cout &lt;&lt; numbers;
+            number--;
+            test(number);
+        }
+    }
+    // 54321"
+        </item>
+        <item>Now when we call the test function, it will check if the value is 1. If yes then it will just print the number then finish</item>
+        <item>Otherwise he will reduce by 1 then recursion</item>
+        <item>Note that the number value used during recursion is no longer the value set in the main function, but uses the modified value in the function itself</item>
+        <item>Now that you know how to use recusion, keep learning and playing with codes!</item>
+    </string-array>
+</resources>

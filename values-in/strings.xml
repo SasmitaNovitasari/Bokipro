@@ -1,0 +1,34 @@
+<resources>
+    <!-- For recyclerview Home -->
+    <string-array name="tittleHome">
+        <item>Tutorial Java</item>
+        <item>Tutorial HTML</item>
+        <item>Tutorial C++</item>
+    </string-array>
+
+
+    <!-- for stepper welcome -->
+    <string-array name="tittleWelcome">
+        <item>Sederhana dan mudah dimengerti</item>
+        <item>Terpercaya</item>
+        <item>Iklan untuk pengembangan</item>
+    </string-array>
+
+    <string-array name="contentWelcome">
+        <item>Kami mengutamakan kesederhanaan untuk memudahkan Kamu</item>
+        <item>Materi dibuat langsung oleh programmer dan disusun dengan terstruktur</item>
+        <item>Coding adalah pekerjaan yang sangat berat. Biarkan iklan memberikan semangat kepada developer untuk secangkir kopi</item>
+    </string-array>
+
+    <array name="imagesWelcome">
+        <item>@drawable/simplicity</item>
+        <item>@drawable/shield</item>
+        <item>@drawable/cofee</item>
+    </array>
+
+    <integer-array name="colorWelcome">
+        <item>@color/green</item>
+        <item>@color/blue</item>
+        <item>@color/orange2</item>
+    </integer-array>
+</resources>
